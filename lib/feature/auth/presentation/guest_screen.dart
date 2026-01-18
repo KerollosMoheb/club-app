@@ -4,13 +4,13 @@ import 'package:club_app/core/themeing/app_textstyles.dart';
 import 'package:club_app/core/widgets/custom_button.dart';
 import 'package:club_app/core/widgets/custom_text_form_field.dart';
 import 'package:club_app/feature/auth/presentation/widgets/build_app_bar.dart';
-import 'package:club_app/feature/auth/presentation/widgets/first_time_register.dart';
-import 'package:club_app/feature/auth/presentation/widgets/forgot_password.dart';
+import 'package:club_app/feature/auth/presentation/widgets/google_and_facebook.dart';
+import 'package:club_app/feature/auth/presentation/widgets/terms_and_policy.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+class GuestScreen extends StatelessWidget {
+  const GuestScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,21 +26,31 @@ class LoginScreen extends StatelessWidget {
                 height: 165,
               ),
             ),
-            SizedBox(height: 71.h),
-            CustomTextFormField(text: 'Membership ID'),
-            SizedBox(height: 40.h),
+            SizedBox(height: 84.h),
             CustomTextFormField(text: 'Email'),
-            SizedBox(height: 19.h),
-            ForgotPassword(),
-            SizedBox(height: 33.h),
+            SizedBox(height: 30.h),
             CustomButton(
-              text: 'Login',
+              text: 'Continue',
               color: AppColors.mainGreen,
               style: AppTextstyles.font20whiteW600,
               onTap: () {},
             ),
-            SizedBox(height: 12.h),
-            FirstTimeRegister(),
+            SizedBox(height: 26.h),
+            Text('or', style: AppTextstyles.font20orTextW400),
+            SizedBox(height: 26.h),
+            GoogleAndFacebook(
+              imagePath: 'assets/images/devicon_google.png',
+              text: 'Continue with Google',
+              onTap: () {},
+            ),
+            SizedBox(height: 24.h),
+            GoogleAndFacebook(
+              imagePath: 'assets/images/logos_facebook.png',
+              text: 'Continue with Facebook',
+              onTap: () {},
+            ),
+            SizedBox(height: 24.h),
+            TermsAndPolicy(),
           ],
         ),
       ),

@@ -39,8 +39,8 @@ class RegisterScreen extends StatelessWidget {
               SizedBox(height: 24.h),
               CustomButton(
                 text: 'Register',
-                color: AppColors.darkGreen,
-                style: AppTextstyles.font20whiteW700,
+                color: AppColors.mainGreen,
+                style: AppTextstyles.font20whiteW600,
                 onTap: () {},
               ),
               SizedBox(height: 5.h),

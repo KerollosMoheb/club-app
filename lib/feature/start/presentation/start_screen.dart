@@ -25,7 +25,7 @@ class StartScreen extends StatelessWidget {
             SizedBox(height: 100.h),
             CustomButton(
               text: 'Register Now',
-              color: AppColors.darkGreen,
+              color: AppColors.mainGreen,
               style: AppTextstyles.font20whiteW700,
               onTap: () {
                 context.pushNamed(Routes.registerScreen);
@@ -35,7 +35,7 @@ class StartScreen extends StatelessWidget {
             CustomButton(
               text: 'Login as Member',
               color: Colors.transparent,
-              style: AppTextstyles.font20darkGreenW600,
+              style: AppTextstyles.font20mainGreenW600,
               onTap: () {
                 context.pushNamed(Routes.loginScreen);
               },
@@ -44,8 +44,10 @@ class StartScreen extends StatelessWidget {
             CustomButton(
               text: 'Login as Guest',
               color: Colors.transparent,
-              style: AppTextstyles.font20darkGreenW600,
-              onTap: () {},
+              style: AppTextstyles.font20mainGreenW600,
+              onTap: () {
+                context.pushNamed(Routes.guestScreen);
+              },
             ),
           ],
         ),

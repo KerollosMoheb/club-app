@@ -20,7 +20,7 @@ class ForgotPassword extends StatelessWidget {
                 style: AppTextstyles.font15alreadyTextW500,
                 recognizer: TapGestureRecognizer()
                   ..onTap = () {
-                   // context.pushReplacementNamed(Routes.loginScreen);
+                   // context.pushReplacementNamed(Routes.forgetPasswordScreen);
                   },
               ),
             ],

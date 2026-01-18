@@ -34,7 +34,7 @@ class _SplashScreenState extends State<SplashScreen> {
               ),
             ),
             Spacer(),
-            Text('Powered by ifikra', style: AppTextstyles.font14darkGreenW500),
+            Text('Powered by ifikra', style: AppTextstyles.font14mainGreenW500),
             SizedBox(height: 37.h),
           ],
         ),

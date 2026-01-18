@@ -1,4 +1,5 @@
 import 'package:club_app/core/routing/routes.dart';
+import 'package:club_app/feature/auth/presentation/guest_screen.dart';
 import 'package:club_app/feature/auth/presentation/login_screen.dart';
 import 'package:club_app/feature/auth/presentation/register_screen.dart';
 import 'package:club_app/feature/splash/presentation/splash_screen.dart';
@@ -15,7 +16,9 @@ class AppRouter {
       case Routes.registerScreen:
         return MaterialPageRoute(builder: (context) => const RegisterScreen());
       case Routes.loginScreen:
-        return MaterialPageRoute(builder: (context) => const LoginScreen ());
+        return MaterialPageRoute(builder: (context) => const LoginScreen());
+      case Routes.guestScreen:
+        return MaterialPageRoute(builder: (context) => const GuestScreen());
       default:
         return MaterialPageRoute(
           builder: (context) => Scaffold(

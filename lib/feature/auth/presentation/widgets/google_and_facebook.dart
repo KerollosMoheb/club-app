@@ -1,18 +1,17 @@
 import 'package:club_app/core/themeing/app_colors.dart';
+import 'package:club_app/core/themeing/app_textstyles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class CustomButton extends StatelessWidget {
-  const CustomButton({
+class GoogleAndFacebook extends StatelessWidget {
+  const GoogleAndFacebook({
     super.key,
+    required this.imagePath,
     required this.text,
-    required this.color,
-    required this.style,
     this.onTap,
   });
+  final String imagePath;
   final String text;
-  final Color color;
-  final TextStyle style;
   final void Function()? onTap;
   @override
   Widget build(BuildContext context) {
@@ -22,11 +21,17 @@ class CustomButton extends StatelessWidget {
         width: 300.w,
         height: 53.h,
         decoration: BoxDecoration(
-          color: color,
           borderRadius: BorderRadius.circular(20),
           border: Border.all(color: AppColors.mainGreen),
         ),
-        child: Center(child: Text(text, style: style)),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(imagePath, width: 30.w),
+            SizedBox(width: 13.w),
+            Text(text, style: AppTextstyles.font14blackW600),
+          ],
+        ),
       ),
     );
   }

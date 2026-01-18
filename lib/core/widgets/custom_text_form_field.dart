@@ -9,15 +9,15 @@ class CustomTextFormField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 50.w),
+    return SizedBox(
+      width: 300.w,
       child: TextFormField(
         decoration: InputDecoration(
           hintText: text,
           hintStyle: AppTextstyles.font18blackW500,
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(20),
-            borderSide: BorderSide(color: AppColors.darkGreen),
+            borderSide: BorderSide(color: AppColors.mainGreen),
           ),
         ),
       ),
