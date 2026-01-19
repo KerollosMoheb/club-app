@@ -1,10 +1,11 @@
 import 'package:club_app/core/helper/extentions.dart';
+import 'package:club_app/core/routing/routes.dart';
 import 'package:club_app/core/themeing/app_colors.dart';
 import 'package:club_app/core/themeing/app_textstyles.dart';
+import 'package:club_app/core/widgets/custom_app_bar.dart';
 import 'package:club_app/core/widgets/custom_button.dart';
 import 'package:club_app/core/widgets/custom_text_form_field.dart';
 import 'package:club_app/feature/auth/presentation/widgets/already_have_registered.dart';
-import 'package:club_app/feature/auth/presentation/widgets/build_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -14,7 +15,7 @@ class RegisterScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: buildAppBar(() => context.pop()),
+      appBar: customAppBar(() => context.pop(), ''),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
@@ -28,23 +29,26 @@ class RegisterScreen extends StatelessWidget {
               ),
               SizedBox(height: 22.h),
               CustomTextFormField(text: 'Membership ID'),
-              SizedBox(height: 24.h),
+              SizedBox(height: 40.h),
               CustomTextFormField(text: 'Email'),
-              SizedBox(height: 24.h),
+              SizedBox(height: 40.h),
               CustomTextFormField(text: 'Phone Number'),
-              SizedBox(height: 24.h),
+              SizedBox(height: 40.h),
               CustomTextFormField(text: 'Password'),
-              SizedBox(height: 24.h),
+              SizedBox(height: 40.h),
               CustomTextFormField(text: 'Confirm Password'),
               SizedBox(height: 24.h),
               CustomButton(
                 text: 'Register',
                 color: AppColors.mainGreen,
                 style: AppTextstyles.font20whiteW600,
-                onTap: () {},
+                onTap: () {
+                  context.pushReplacementNamed(Routes.mainScreen);
+                },
               ),
-              SizedBox(height: 5.h),
+              SizedBox(height: 12.h),
               AlreadyHaveRegistered(),
+              SizedBox(height: 21.h),
             ],
           ),
         ),

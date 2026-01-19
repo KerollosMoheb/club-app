@@ -17,7 +17,10 @@ class ClubApp extends StatelessWidget {
       designSize: const Size(375, 812),
       minTextAdapt: true,
       child: MaterialApp(
-        theme: ThemeData(fontFamily: AppFonts.primary),
+        theme: ThemeData(
+          fontFamily: AppFonts.primary,
+          scaffoldBackgroundColor: Colors.white,
+        ),
         debugShowCheckedModeBanner: false,
         initialRoute: Routes.splashScreen,
         onGenerateRoute: appRouter.generateRoute,

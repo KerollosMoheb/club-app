@@ -1,9 +1,10 @@
 import 'package:club_app/core/helper/extentions.dart';
+import 'package:club_app/core/routing/routes.dart';
 import 'package:club_app/core/themeing/app_colors.dart';
 import 'package:club_app/core/themeing/app_textstyles.dart';
+import 'package:club_app/core/widgets/custom_app_bar.dart';
 import 'package:club_app/core/widgets/custom_button.dart';
 import 'package:club_app/core/widgets/custom_text_form_field.dart';
-import 'package:club_app/feature/auth/presentation/widgets/build_app_bar.dart';
 import 'package:club_app/feature/auth/presentation/widgets/first_time_register.dart';
 import 'package:club_app/feature/auth/presentation/widgets/forgot_password.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +16,7 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: buildAppBar(() => context.pop()),
+      appBar: customAppBar(() => context.pop(), ''),
       body: SafeArea(
         child: Column(
           children: [
@@ -37,10 +38,13 @@ class LoginScreen extends StatelessWidget {
               text: 'Login',
               color: AppColors.mainGreen,
               style: AppTextstyles.font20whiteW600,
-              onTap: () {},
+              onTap: () {
+                context.pushReplacementNamed(Routes.mainScreen);
+              },
             ),
             SizedBox(height: 12.h),
             FirstTimeRegister(),
+            SizedBox(height: 21.h),
           ],
         ),
       ),

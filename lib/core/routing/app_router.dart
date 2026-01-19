@@ -2,6 +2,11 @@ import 'package:club_app/core/routing/routes.dart';
 import 'package:club_app/feature/auth/presentation/guest_screen.dart';
 import 'package:club_app/feature/auth/presentation/login_screen.dart';
 import 'package:club_app/feature/auth/presentation/register_screen.dart';
+import 'package:club_app/feature/home/presentation/achievements_screen.dart';
+import 'package:club_app/feature/home/presentation/home_screen.dart';
+import 'package:club_app/feature/home/presentation/main_screen.dart';
+import 'package:club_app/feature/home/presentation/news_screen.dart';
+import 'package:club_app/feature/home/presentation/notification_screen.dart';
 import 'package:club_app/feature/splash/presentation/splash_screen.dart';
 import 'package:club_app/feature/start/presentation/start_screen.dart';
 import 'package:flutter/material.dart';
@@ -19,6 +24,18 @@ class AppRouter {
         return MaterialPageRoute(builder: (context) => const LoginScreen());
       case Routes.guestScreen:
         return MaterialPageRoute(builder: (context) => const GuestScreen());
+      case Routes.homeScreen:
+        return MaterialPageRoute(builder: (context) => const HomeScreen());
+      case Routes.mainScreen:
+        return MaterialPageRoute(builder: (context) => const MainScreen());
+      case Routes.notificationScreen:
+        return MaterialPageRoute(
+          builder: (context) => const NotificationScreen(),
+        );
+      case Routes.newsScreen:
+        return MaterialPageRoute(builder: (context) => const NewsScreen());
+      case Routes.achievementsScreen:
+        return MaterialPageRoute(builder: (context) => const AchievementsScreen());
       default:
         return MaterialPageRoute(
           builder: (context) => Scaffold(

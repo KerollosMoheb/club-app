@@ -55,4 +55,24 @@ class AppTextstyles {
     fontWeight: FontWeight.w500,
     fontFamily: AppFonts.secondary,
   );
+  static TextStyle font12mainGreenW400 = TextStyle(
+    fontSize: 12,
+    color: AppColors.mainGreen,
+    fontWeight: FontWeight.w400,
+  );
+  static TextStyle font11blackW400 = TextStyle(
+    fontSize: 11,
+    color: Colors.black,
+    fontWeight: FontWeight.w400,
+  );
+  static TextStyle font14lightGreenW300 = TextStyle(
+    fontSize: 14,
+    color: AppColors.lightGreen,
+    fontWeight: FontWeight.w300,
+  );
+  static TextStyle font10blackW300 = TextStyle(
+    fontSize: 10,
+    color: Colors.black,
+    fontWeight: FontWeight.w300,
+  );
 }
