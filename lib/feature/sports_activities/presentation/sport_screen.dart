@@ -4,22 +4,22 @@ import 'package:club_app/core/themeing/app_textstyles.dart';
 import 'package:club_app/core/widgets/custom_app_bar.dart';
 import 'package:club_app/core/widgets/custom_button.dart';
 import 'package:club_app/feature/medical_clinics/presentation/widgets/call_info.dart';
-import 'package:club_app/feature/medical_clinics/presentation/widgets/days_doctor_schedual.dart';
+import 'package:club_app/feature/sports_activities/presentation/widgets/days_sport_schedual.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class DoctorScreen extends StatelessWidget {
-  const DoctorScreen({
+class SportScreen extends StatelessWidget {
+  const SportScreen({
     super.key,
     required this.name,
-    required this.specialty,
-    required this.location,
+    required this.price,
+    required this.age,
     required this.image,
   });
   final String name;
-  final String specialty;
-  final String location;
+  final String price;
+  final String age;
   final String image;
   @override
   Widget build(BuildContext context) {
@@ -37,11 +37,14 @@ class DoctorScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   SizedBox(height: 31.h),
-                  Text(specialty, style: AppTextstyles.font16darkGreyW600),
+                  Text(
+                    '$price EGP/ Month',
+                    style: AppTextstyles.font16darkGreyW600,
+                  ),
                   SizedBox(height: 21.h),
                   Divider(),
                   SizedBox(height: 15.h),
-                  Text(location, style: AppTextstyles.font15darkGreyW400),
+                  Text(age, style: AppTextstyles.font15darkGreyW400),
                   SizedBox(height: 15.h),
                   Divider(),
                   SizedBox(height: 18.h),
@@ -52,27 +55,25 @@ class DoctorScreen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 18.h),
-                  DaysDoctorSchedual(),
+                  DaysSportSchedual(),
                   SizedBox(height: 30.h),
                   CallInfo(),
                   SizedBox(height: 20.h),
                   Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Padding(
                         padding: EdgeInsets.only(top: 5.h),
                         child: Icon(FontAwesomeIcons.locationDot, size: 24.sp),
                       ),
-                      SizedBox(width: 10.w),
-                      Expanded(
-                        child: Text(
-                          location,
-                          style: AppTextstyles.font14blackW500.copyWith(
-                            fontWeight: FontWeight.w400,
-                          ),
-                          overflow: TextOverflow.ellipsis,
-                          maxLines: 2,
+                      SizedBox(width: 5.w),
+                      Text(
+                        'Plunge Pool',
+                        style: AppTextstyles.font14blackW500.copyWith(
+                          fontWeight: FontWeight.w400,
                         ),
+                        overflow: TextOverflow.ellipsis,
+                        maxLines: 2,
                       ),
                     ],
                   ),

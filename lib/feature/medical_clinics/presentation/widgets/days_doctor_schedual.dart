@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class DaysSchedual extends StatelessWidget {
-  const DaysSchedual({super.key});
+class DaysDoctorSchedual extends StatelessWidget {
+  const DaysDoctorSchedual({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -27,12 +27,20 @@ class DaysSchedual extends StatelessWidget {
                 ),
                 Row(
                   children: [
-                    Icon(FontAwesomeIcons.clock, size: 24),
+                    Icon(
+                      FontAwesomeIcons.clock,
+                      size: 17,
+                      color: Color(0xff1C1B1F),
+                    ),
                     SizedBox(width: 20.w),
                     Text('10:00 AM'),
-                    SizedBox(width: 5.w),
-                    Icon(FontAwesomeIcons.arrowRight, size: 24),
-                    SizedBox(width: 5.w),
+                    SizedBox(width: 10.w),
+                    Icon(
+                      FontAwesomeIcons.arrowRight,
+                      size: 13,
+                      color: Color(0xff1C1B1F),
+                    ),
+                    SizedBox(width: 10.w),
                     Text('11:00 AM'),
                   ],
                 ),
@@ -57,12 +65,20 @@ class DaysSchedual extends StatelessWidget {
                 ),
                 Row(
                   children: [
-                    Icon(FontAwesomeIcons.clock, size: 24),
+                    Icon(
+                      FontAwesomeIcons.clock,
+                      size: 17,
+                      color: Color(0xff1C1B1F),
+                    ),
                     SizedBox(width: 20.w),
                     Text('10:00 AM'),
-                    SizedBox(width: 5.w),
-                    Icon(FontAwesomeIcons.arrowRight, size: 24),
-                    SizedBox(width: 5.w),
+                    SizedBox(width: 10.w),
+                    Icon(
+                      FontAwesomeIcons.arrowRight,
+                      size: 13,
+                      color: Color(0xff1C1B1F),
+                    ),
+                    SizedBox(width: 10.w),
                     Text('11:00 AM'),
                   ],
                 ),

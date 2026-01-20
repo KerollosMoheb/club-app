@@ -3,20 +3,20 @@ import 'package:club_app/core/themeing/app_textstyles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class DoctorsInfo extends StatelessWidget {
-  const DoctorsInfo({
+class SportsInfo extends StatelessWidget {
+  const SportsInfo({
     super.key,
     required this.image,
     required this.name,
-    required this.location,
-    required this.specialty,
+    required this.age,
+    required this.price,
     required this.available,
     this.onTap,
   });
   final String image;
   final String name;
-  final String location;
-  final String specialty;
+  final String age;
+  final String price;
   final String available;
   final VoidCallback? onTap;
   @override
@@ -43,12 +43,13 @@ class DoctorsInfo extends StatelessWidget {
                   children: [
                     Text(
                       name,
-                      style: AppTextstyles.font14mainGreenW500.copyWith(
+                      style: AppTextstyles.font15alreadyTextW500.copyWith(
                         color: Colors.black,
                       ),
                     ),
+                    SizedBox(height: 18.h),
                     Text(
-                      location,
+                      age,
                       style: AppTextstyles.font11blackW400.copyWith(
                         color: AppColors.lightGrey,
                       ),
@@ -57,8 +58,8 @@ class DoctorsInfo extends StatelessWidget {
                     ),
                     SizedBox(height: 10.h),
                     Text(
-                      specialty,
-                      style: AppTextstyles.font10blackW300.copyWith(
+                      price,
+                      style: AppTextstyles.font14mainGreenW500.copyWith(
                         fontSize: 11,
                       ),
                     ),

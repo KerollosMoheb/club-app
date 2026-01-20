@@ -11,4 +11,6 @@ class Routes {
   static const String achievementsScreen = '/achievementsScreen';
   static const String medicalClinicsScreen = '/medicalClinicsScreen';
   static const String doctorScreen = '/doctorScreen';
+  static const String sportsActivitiesScreen = '/sportsActivitiesScreen';
+  static const String sportScreen = '/sportScreen';
 }

@@ -10,6 +10,8 @@ import 'package:club_app/feature/home/presentation/notification_screen.dart';
 import 'package:club_app/feature/medical_clinics/presentation/doctor_screen.dart';
 import 'package:club_app/feature/medical_clinics/presentation/medical_clinics_screen.dart';
 import 'package:club_app/feature/splash/presentation/splash_screen.dart';
+import 'package:club_app/feature/sports_activities/presentation/sport_screen.dart';
+import 'package:club_app/feature/sports_activities/presentation/sports_activities_screen.dart';
 import 'package:club_app/feature/start/presentation/start_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -51,6 +53,20 @@ class AppRouter {
             name: args['name'],
             specialty: args['specialty'],
             location: args['location'],
+            image: args['image'],
+          ),
+        );
+      case Routes.sportsActivitiesScreen:
+        return MaterialPageRoute(
+          builder: (context) => const SportsActivitiesScreen(),
+        );
+      case Routes.sportScreen:
+        final args = settings.arguments as Map<String, dynamic>;
+        return MaterialPageRoute(
+          builder: (context) => SportScreen(
+            name: args['name'],
+            price: args['price'],
+            age: args['age'],
             image: args['image'],
           ),
         );

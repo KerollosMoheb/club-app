@@ -19,9 +19,17 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   final List<Map<String, dynamic>> homeItems = [
     {'title': 'Renew Membership', 'icon': FontAwesomeIcons.arrowsRotate},
-    {'title': 'Sports', 'icon': FontAwesomeIcons.trophy},
+    {
+      'title': 'Sports',
+      'icon': FontAwesomeIcons.trophy,
+      'route': Routes.sportsActivitiesScreen,
+    },
     {'title': 'Discount', 'icon': FontAwesomeIcons.percentage},
-    {'title': 'Medical Clinics', 'icon': FontAwesomeIcons.stethoscope,'route':Routes.medicalClinicsScreen},
+    {
+      'title': 'Medical Clinics',
+      'icon': FontAwesomeIcons.stethoscope,
+      'route': Routes.medicalClinicsScreen,
+    },
     {'title': 'Restaurants & Cafes', 'icon': FontAwesomeIcons.burger},
     {'title': 'Events', 'icon': FontAwesomeIcons.listCheck},
   ];
