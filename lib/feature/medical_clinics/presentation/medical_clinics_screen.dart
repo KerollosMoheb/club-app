@@ -79,6 +79,7 @@ class _MedicalClinicsScreenState extends State<MedicalClinicsScreen> {
           padding: const EdgeInsets.symmetric(horizontal: 26),
           child: Column(
             children: [
+              SizedBox(height: 10.h),
               MedicalCategories(
                 categories: categories,
                 selectedIndex: _selectedCategoryIndex,

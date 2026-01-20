@@ -2,6 +2,7 @@ import 'package:club_app/core/routing/routes.dart';
 import 'package:club_app/feature/auth/presentation/guest_screen.dart';
 import 'package:club_app/feature/auth/presentation/login_screen.dart';
 import 'package:club_app/feature/auth/presentation/register_screen.dart';
+import 'package:club_app/feature/discount/presentation/discount_screen.dart';
 import 'package:club_app/feature/home/presentation/achievements_screen.dart';
 import 'package:club_app/feature/home/presentation/home_screen.dart';
 import 'package:club_app/feature/home/presentation/main_screen.dart';
@@ -70,6 +71,8 @@ class AppRouter {
             image: args['image'],
           ),
         );
+      case Routes.discountScreen:
+        return MaterialPageRoute(builder: (context) => const DiscountScreen());
       default:
         return MaterialPageRoute(
           builder: (context) => Scaffold(

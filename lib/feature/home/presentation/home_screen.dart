@@ -24,7 +24,11 @@ class _HomeScreenState extends State<HomeScreen> {
       'icon': FontAwesomeIcons.trophy,
       'route': Routes.sportsActivitiesScreen,
     },
-    {'title': 'Discount', 'icon': FontAwesomeIcons.percentage},
+    {
+      'title': 'Discount',
+      'icon': FontAwesomeIcons.percentage,
+      'route': Routes.discountScreen,
+    },
     {
       'title': 'Medical Clinics',
       'icon': FontAwesomeIcons.stethoscope,

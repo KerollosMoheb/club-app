@@ -13,4 +13,5 @@ class Routes {
   static const String doctorScreen = '/doctorScreen';
   static const String sportsActivitiesScreen = '/sportsActivitiesScreen';
   static const String sportScreen = '/sportScreen';
+  static const String discountScreen = '/discountScreen';
 }

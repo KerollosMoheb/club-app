@@ -68,6 +68,7 @@ class _SportsActivitiesScreenState extends State<SportsActivitiesScreen> {
           padding: const EdgeInsets.symmetric(horizontal: 26),
           child: Column(
             children: [
+              SizedBox(height: 10.h),
               SportsCategories(
                 categories: categories,
                 selectedIndex: _selectedCategoryIndex,
