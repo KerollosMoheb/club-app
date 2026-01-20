@@ -9,4 +9,6 @@ class Routes {
   static const String notificationScreen = '/notificationScreen';
   static const String newsScreen = '/newsScreen';
   static const String achievementsScreen = '/achievementsScreen';
+  static const String medicalClinicsScreen = '/medicalClinicsScreen';
+  static const String doctorScreen = '/doctorScreen';
 }

@@ -7,6 +7,8 @@ import 'package:club_app/feature/home/presentation/home_screen.dart';
 import 'package:club_app/feature/home/presentation/main_screen.dart';
 import 'package:club_app/feature/home/presentation/news_screen.dart';
 import 'package:club_app/feature/home/presentation/notification_screen.dart';
+import 'package:club_app/feature/medical_clinics/presentation/doctor_screen.dart';
+import 'package:club_app/feature/medical_clinics/presentation/medical_clinics_screen.dart';
 import 'package:club_app/feature/splash/presentation/splash_screen.dart';
 import 'package:club_app/feature/start/presentation/start_screen.dart';
 import 'package:flutter/material.dart';
@@ -35,7 +37,23 @@ class AppRouter {
       case Routes.newsScreen:
         return MaterialPageRoute(builder: (context) => const NewsScreen());
       case Routes.achievementsScreen:
-        return MaterialPageRoute(builder: (context) => const AchievementsScreen());
+        return MaterialPageRoute(
+          builder: (context) => const AchievementsScreen(),
+        );
+      case Routes.medicalClinicsScreen:
+        return MaterialPageRoute(
+          builder: (context) => const MedicalClinicsScreen(),
+        );
+      case Routes.doctorScreen:
+        final args = settings.arguments as Map<String, dynamic>;
+        return MaterialPageRoute(
+          builder: (context) => DoctorScreen(
+            name: args['name'],
+            specialty: args['specialty'],
+            location: args['location'],
+            image: args['image'],
+          ),
+        );
       default:
         return MaterialPageRoute(
           builder: (context) => Scaffold(
