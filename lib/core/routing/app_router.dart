@@ -10,6 +10,8 @@ import 'package:club_app/feature/home/presentation/news_screen.dart';
 import 'package:club_app/feature/home/presentation/notification_screen.dart';
 import 'package:club_app/feature/medical_clinics/presentation/doctor_screen.dart';
 import 'package:club_app/feature/medical_clinics/presentation/medical_clinics_screen.dart';
+import 'package:club_app/feature/restaurants_cafes/presentation/restaurants_and_cafes_details_screen.dart';
+import 'package:club_app/feature/restaurants_cafes/presentation/restaurants_and_cafes_screen.dart';
 import 'package:club_app/feature/splash/presentation/splash_screen.dart';
 import 'package:club_app/feature/sports_activities/presentation/sport_screen.dart';
 import 'package:club_app/feature/sports_activities/presentation/sports_activities_screen.dart';
@@ -73,6 +75,19 @@ class AppRouter {
         );
       case Routes.discountScreen:
         return MaterialPageRoute(builder: (context) => const DiscountScreen());
+      case Routes.restaurantsAndCafesScreen:
+        return MaterialPageRoute(
+          builder: (context) => const RestaurantsAndCafesScreen(),
+        );
+      case Routes.restaurantsAndCafesDetailsScreen:
+        final args = settings.arguments as Map<String, dynamic>;
+        return MaterialPageRoute(
+          builder: (context) => RestaurantsAndCafesDetailsScreen(
+            name: args['name'],
+            details: args['details'],
+            image: args['image'],
+          ),
+        );
       default:
         return MaterialPageRoute(
           builder: (context) => Scaffold(

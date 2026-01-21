@@ -22,7 +22,7 @@ class ClubApp extends StatelessWidget {
           scaffoldBackgroundColor: Colors.white,
         ),
         debugShowCheckedModeBanner: false,
-        initialRoute: Routes.splashScreen,
+        initialRoute: Routes.mainScreen,
         onGenerateRoute: appRouter.generateRoute,
       ),
     );

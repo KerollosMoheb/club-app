@@ -34,7 +34,11 @@ class _HomeScreenState extends State<HomeScreen> {
       'icon': FontAwesomeIcons.stethoscope,
       'route': Routes.medicalClinicsScreen,
     },
-    {'title': 'Restaurants & Cafes', 'icon': FontAwesomeIcons.burger},
+    {
+      'title': 'Restaurants & Cafes',
+      'icon': FontAwesomeIcons.burger,
+      'route': Routes.restaurantsAndCafesScreen,
+    },
     {'title': 'Events', 'icon': FontAwesomeIcons.listCheck},
   ];
   @override
