@@ -15,10 +15,9 @@ class DiscountScreen extends StatefulWidget {
 
 class _DiscountScreenState extends State<DiscountScreen> {
   int _selectedCategoryIndex = 0;
-
   final List<String> categories = ['All', 'Medical', 'Hotels', 'Restaurants'];
 
-  final List<DiscountModel> allDiscount = [
+  final List<DiscountModel> allDiscounts = [
     DiscountModel(
       image: "assets/images/protoMarina.png",
       name: "Porto Marina",
@@ -28,7 +27,7 @@ class _DiscountScreenState extends State<DiscountScreen> {
     DiscountModel(
       image: "assets/images/saudiHospital.png",
       name: "Saudi German Hospital",
-      discount: "50% discount on clinic consultations",
+      discount: "50% discount",
       category: "Medical",
     ),
     DiscountModel(
@@ -38,21 +37,20 @@ class _DiscountScreenState extends State<DiscountScreen> {
       category: "Hotels",
     ),
   ];
+
   @override
   Widget build(BuildContext context) {
-    final filteredDiscount = _selectedCategoryIndex == 0
-        ? allDiscount
-        : allDiscount
-              .where(
-                (dis) => dis.category == categories[_selectedCategoryIndex],
-              )
+    final filteredDiscounts = _selectedCategoryIndex == 0
+        ? allDiscounts
+        : allDiscounts
+              .where((d) => d.category == categories[_selectedCategoryIndex])
               .toList();
 
     return Scaffold(
       appBar: customAppBar(() => context.pop(), "Discount"),
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 26),
+          padding: EdgeInsets.symmetric(horizontal: 24.w),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -60,29 +58,32 @@ class _DiscountScreenState extends State<DiscountScreen> {
               DiscountCategories(
                 categories: categories,
                 selectedIndex: _selectedCategoryIndex,
-                onCategoryChanged: (index) {
-                  setState(() => _selectedCategoryIndex = index);
-                },
+                onCategoryChanged: (index) =>
+                    setState(() => _selectedCategoryIndex = index),
               ),
               SizedBox(height: 20.h),
               Expanded(
-                child: ListView.separated(
-                  itemCount: filteredDiscount.length,
-                  separatorBuilder: (context, index) => SizedBox(height: 16.h),
-                  itemBuilder: (context, index) {
-                    final sport = filteredDiscount[index];
-                    return DiscountInfo(
-                      image: sport.image,
-                      name: sport.name,
-                      discount: sport.discount,
-                    );
-                  },
-                ),
+                child: filteredDiscounts.isEmpty
+                    ? _buildEmptyState()
+                    : _buildDiscountList(filteredDiscounts),
               ),
             ],
           ),
         ),
       ),
     );
+  }
+
+  Widget _buildDiscountList(List<DiscountModel> items) {
+    return ListView.separated(
+      itemCount: items.length,
+      padding: EdgeInsets.only(bottom: 20.h),
+      separatorBuilder: (_, __) => SizedBox(height: 16.h),
+      itemBuilder: (context, index) => DiscountInfo(model: items[index]),
+    );
+  }
+
+  Widget _buildEmptyState() {
+    return const Center(child: Text("No discounts available in this category"));
   }
 }
