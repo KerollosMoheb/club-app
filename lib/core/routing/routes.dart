@@ -16,4 +16,5 @@ class Routes {
   static const String discountScreen = '/discountScreen';
   static const String restaurantsAndCafesScreen = '/restaurantsAndCafesScreen';
   static const String restaurantsAndCafesDetailsScreen = '/restaurantsAndCafesDetailsScreen';
+  static const String eventsScreen = '/eventsScreen';
 }

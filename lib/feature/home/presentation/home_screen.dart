@@ -39,7 +39,11 @@ class _HomeScreenState extends State<HomeScreen> {
       'icon': FontAwesomeIcons.burger,
       'route': Routes.restaurantsAndCafesScreen,
     },
-    {'title': 'Events', 'icon': FontAwesomeIcons.listCheck},
+    {
+      'title': 'Events',
+      'icon': FontAwesomeIcons.listCheck,
+      'route': Routes.eventsScreen,
+    },
   ];
   @override
   Widget build(BuildContext context) {

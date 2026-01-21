@@ -3,6 +3,7 @@ import 'package:club_app/feature/auth/presentation/guest_screen.dart';
 import 'package:club_app/feature/auth/presentation/login_screen.dart';
 import 'package:club_app/feature/auth/presentation/register_screen.dart';
 import 'package:club_app/feature/discount/presentation/discount_screen.dart';
+import 'package:club_app/feature/events/presentation/events_screen.dart';
 import 'package:club_app/feature/home/presentation/achievements_screen.dart';
 import 'package:club_app/feature/home/presentation/home_screen.dart';
 import 'package:club_app/feature/home/presentation/main_screen.dart';
@@ -88,6 +89,8 @@ class AppRouter {
             image: args['image'],
           ),
         );
+      case Routes.eventsScreen:
+        return MaterialPageRoute(builder: (context) => const EventsScreen());
       default:
         return MaterialPageRoute(
           builder: (context) => Scaffold(
