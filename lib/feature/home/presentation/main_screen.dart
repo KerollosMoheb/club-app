@@ -20,7 +20,7 @@ class _MainScreenState extends State<MainScreen> {
     HomeScreen(),
     ServicesScreen(),
     MatchesScreen(),
-    const Center(child: Text("More Screen")),
+    const Center(child: Text("More Screeen")),
   ];
 
   @override
