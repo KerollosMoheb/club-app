@@ -60,7 +60,7 @@ class _HomeScreenState extends State<HomeScreen> {
               SliverToBoxAdapter(
                 child: CustomRowText(
                   firstText: 'Last News',
-                  secondtText: 'See All',
+                  secondtText: 'See Alllllllllll',
                   onTap: () => context.pushNamed(Routes.newsScreen),
                 ),
               ),
