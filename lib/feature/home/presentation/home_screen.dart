@@ -18,7 +18,11 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   final List<Map<String, dynamic>> homeItems = [
-    {'title': 'Renew Membership', 'icon': FontAwesomeIcons.arrowsRotate},
+    {
+      'title': 'Renew Membership',
+      'icon': FontAwesomeIcons.arrowsRotate,
+      'route': Routes.renewScreen,
+    },
     {
       'title': 'Sports',
       'icon': FontAwesomeIcons.trophy,
@@ -60,7 +64,7 @@ class _HomeScreenState extends State<HomeScreen> {
               SliverToBoxAdapter(
                 child: CustomRowText(
                   firstText: 'Last News',
-                  secondtText: 'See Alllllllllll',
+                  secondtText: 'See All',
                   onTap: () => context.pushNamed(Routes.newsScreen),
                 ),
               ),

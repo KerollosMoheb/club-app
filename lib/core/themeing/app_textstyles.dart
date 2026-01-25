@@ -1,5 +1,4 @@
 import 'package:club_app/core/themeing/app_colors.dart';
-import 'package:club_app/core/themeing/app_fonts.dart';
 import 'package:flutter/material.dart';
 
 class AppTextstyles {
@@ -27,7 +26,6 @@ class AppTextstyles {
     fontSize: 16,
     color: AppColors.alreadyText,
     fontWeight: FontWeight.w600,
-    fontFamily: AppFonts.secondary,
   );
   static TextStyle font15alreadyTextW500 = TextStyle(
     fontSize: 15,
@@ -51,9 +49,8 @@ class AppTextstyles {
   );
   static TextStyle font14blackW500 = TextStyle(
     fontSize: 14,
-    color: AppColors.alreadyText,
+    color: Colors.black,
     fontWeight: FontWeight.w500,
-    fontFamily: AppFonts.secondary,
   );
   static TextStyle font12mainGreenW400 = TextStyle(
     fontSize: 12,
@@ -83,6 +80,11 @@ class AppTextstyles {
   static TextStyle font15darkGreyW400 = TextStyle(
     fontSize: 14,
     color: AppColors.darkGrey,
+    fontWeight: FontWeight.w400,
+  );
+  static TextStyle font14darkerGreyW400 = TextStyle(
+    fontSize: 14,
+    color: AppColors.darkerGrey,
     fontWeight: FontWeight.w400,
   );
 }
