@@ -21,4 +21,5 @@ class Routes {
   static const String uploadDocumentScreen = '/uploadDocumentScreen';
   static const String verificationScreen = '/verificationScreen';
   static const String paymentDetailsScreen = '/paymentDetailsScreen';
+  static const String matchDetailsScreen = '/matchDetailsScreen';
 }
