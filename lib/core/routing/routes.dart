@@ -17,4 +17,8 @@ class Routes {
   static const String restaurantsAndCafesScreen = '/restaurantsAndCafesScreen';
   static const String restaurantsAndCafesDetailsScreen = '/restaurantsAndCafesDetailsScreen';
   static const String eventsScreen = '/eventsScreen';
+  static const String renewScreen = '/renewScreen';
+  static const String uploadDocumentScreen = '/uploadDocumentScreen';
+  static const String verificationScreen = '/verificationScreen';
+  static const String paymentDetailsScreen = '/paymentDetailsScreen';
 }

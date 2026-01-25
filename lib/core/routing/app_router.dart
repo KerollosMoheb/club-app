@@ -11,6 +11,10 @@ import 'package:club_app/feature/home/presentation/news_screen.dart';
 import 'package:club_app/feature/home/presentation/notification_screen.dart';
 import 'package:club_app/feature/medical_clinics/presentation/doctor_screen.dart';
 import 'package:club_app/feature/medical_clinics/presentation/medical_clinics_screen.dart';
+import 'package:club_app/feature/renew/presentation/views/payment_details_screen.dart';
+import 'package:club_app/feature/renew/presentation/views/renew_screen.dart';
+import 'package:club_app/feature/renew/presentation/views/upload_document_screen.dart';
+import 'package:club_app/feature/renew/presentation/views/verification_screen.dart';
 import 'package:club_app/feature/restaurants_cafes/presentation/restaurants_and_cafes_details_screen.dart';
 import 'package:club_app/feature/restaurants_cafes/presentation/restaurants_and_cafes_screen.dart';
 import 'package:club_app/feature/splash/presentation/splash_screen.dart';
@@ -91,6 +95,20 @@ class AppRouter {
         );
       case Routes.eventsScreen:
         return MaterialPageRoute(builder: (context) => const EventsScreen());
+      case Routes.renewScreen:
+        return MaterialPageRoute(builder: (context) => const RenewScreen());
+      case Routes.uploadDocumentScreen:
+        return MaterialPageRoute(
+          builder: (context) => const UploadDocumentScreen(),
+        );
+      case Routes.verificationScreen:
+        return MaterialPageRoute(
+          builder: (context) => const VerificationScreen(),
+        );
+      case Routes.paymentDetailsScreen:
+        return MaterialPageRoute(
+          builder: (context) => const PaymentDetailsScreen(),
+        );
       default:
         return MaterialPageRoute(
           builder: (context) => Scaffold(

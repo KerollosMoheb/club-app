@@ -1,0 +1,32 @@
+import 'package:club_app/core/themeing/app_textstyles.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class PendingVerificationContainer extends StatelessWidget {
+  const PendingVerificationContainer({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 5.h),
+      decoration: BoxDecoration(
+        color: Color(0xffFEF9C3),
+        borderRadius: BorderRadius.circular(20.r),
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Icon(Icons.circle, color: Color(0xffEAB308), size: 10.w),
+          SizedBox(width: 5.w),
+          Text(
+            'Pending Verification',
+            style: AppTextstyles.font16alreadyTextW600.copyWith(
+              fontWeight: FontWeight.w500,
+              color: Color(0xffA56913),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
