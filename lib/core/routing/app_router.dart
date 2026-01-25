@@ -9,6 +9,7 @@ import 'package:club_app/feature/home/presentation/home_screen.dart';
 import 'package:club_app/feature/home/presentation/main_screen.dart';
 import 'package:club_app/feature/home/presentation/news_screen.dart';
 import 'package:club_app/feature/home/presentation/notification_screen.dart';
+import 'package:club_app/feature/matches/presentation/views/match_details_screen.dart';
 import 'package:club_app/feature/medical_clinics/presentation/doctor_screen.dart';
 import 'package:club_app/feature/medical_clinics/presentation/medical_clinics_screen.dart';
 import 'package:club_app/feature/renew/presentation/views/payment_details_screen.dart';
@@ -108,6 +109,10 @@ class AppRouter {
       case Routes.paymentDetailsScreen:
         return MaterialPageRoute(
           builder: (context) => const PaymentDetailsScreen(),
+        );
+      case Routes.matchDetailsScreen:
+        return MaterialPageRoute(
+          builder: (context) => const MatchDetailsScreen(),
         );
       default:
         return MaterialPageRoute(
