@@ -1,7 +1,9 @@
 import 'package:club_app/core/helper/extentions.dart';
 import 'package:club_app/core/routing/routes.dart';
-import 'package:club_app/core/themeing/app_colors.dart';
-import 'package:club_app/core/themeing/app_textstyles.dart';
+import 'package:club_app/core/utils/app_colors.dart';
+import 'package:club_app/core/utils/app_images.dart';
+import 'package:club_app/core/utils/app_strings.dart';
+import 'package:club_app/core/utils/app_textstyles.dart';
 import 'package:club_app/core/widgets/custom_app_bar.dart';
 import 'package:club_app/core/widgets/custom_button.dart';
 import 'package:club_app/feature/renew/presentation/views/pending_verification_container.dart';
@@ -16,7 +18,7 @@ class VerificationScreen extends StatelessWidget {
     return Scaffold(
       appBar: customAppBar(() {
         context.pop();
-      }, 'Membership Renewal'),
+      }, AppStrings.membershipRenewal),
       body: SafeArea(
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 30.w),
@@ -25,17 +27,17 @@ class VerificationScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 SizedBox(height: 20.h),
-                Image.asset('assets/images/screenshot.png', width: 300.w),
+                Image.asset(Assets.imagesScreenshot, width: 300.w),
                 SizedBox(height: 40.h),
                 Text(
-                  'Application Under Review',
+                  AppStrings.applicationUnderReview,
                   style: AppTextstyles.font14blackW600.copyWith(fontSize: 24),
                 ),
                 SizedBox(height: 20.h),
                 PendingVerificationContainer(),
                 SizedBox(height: 20.h),
                 Text(
-                  'We\'ve received your documents! Our management team is currently reviewing your application details. This process ensures everything meets our community guidelines.',
+                  AppStrings.renewalDescription,
                   textAlign: TextAlign.center,
                   style: AppTextstyles.font14blackW500.copyWith(
                     fontWeight: FontWeight.w400,
@@ -43,7 +45,7 @@ class VerificationScreen extends StatelessWidget {
                 ),
                 SizedBox(height: 20.h),
                 Text(
-                  'Well notify you via push notification once you\'re cleared to proceed to the final payment step.',
+                  AppStrings.reviewNotificationNote,
                   textAlign: TextAlign.center,
                   style: AppTextstyles.font14blackW500.copyWith(
                     fontWeight: FontWeight.w300,
@@ -52,7 +54,7 @@ class VerificationScreen extends StatelessWidget {
                 ),
                 SizedBox(height: 40.h),
                 CustomButton(
-                  text: 'Back to Home',
+                  text: AppStrings.backToHome,
                   color: AppColors.mainGreen,
                   style: AppTextstyles.font20whiteW600,
                   onTap: () {

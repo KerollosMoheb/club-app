@@ -1,6 +1,6 @@
 import 'package:club_app/core/routing/app_router.dart';
 import 'package:club_app/core/routing/routes.dart';
-import 'package:club_app/core/themeing/app_fonts.dart';
+import 'package:club_app/core/utils/app_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

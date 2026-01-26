@@ -1,5 +1,6 @@
 import 'package:club_app/core/helper/extentions.dart';
 import 'package:club_app/core/routing/routes.dart';
+import 'package:club_app/core/utils/app_strings.dart';
 import 'package:club_app/feature/home/presentation/widgets/achievements_widget.dart';
 import 'package:club_app/feature/home/presentation/widgets/bell_and_background_image.dart';
 import 'package:club_app/feature/home/presentation/widgets/custom_home_text.dart';
@@ -19,32 +20,32 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   final List<Map<String, dynamic>> homeItems = [
     {
-      'title': 'Renew Membership',
+      'title': AppStrings.renewMembership,
       'icon': FontAwesomeIcons.arrowsRotate,
       'route': Routes.renewScreen,
     },
     {
-      'title': 'Sports',
+      'title': AppStrings.sports,
       'icon': FontAwesomeIcons.trophy,
       'route': Routes.sportsActivitiesScreen,
     },
     {
-      'title': 'Discount',
+      'title': AppStrings.discount,
       'icon': FontAwesomeIcons.percentage,
       'route': Routes.discountScreen,
     },
     {
-      'title': 'Medical Clinics',
+      'title': AppStrings.medicalClinics,
       'icon': FontAwesomeIcons.stethoscope,
       'route': Routes.medicalClinicsScreen,
     },
     {
-      'title': 'Restaurants & Cafes',
+      'title': AppStrings.restaurantsCafes,
       'icon': FontAwesomeIcons.burger,
       'route': Routes.restaurantsAndCafesScreen,
     },
     {
-      'title': 'Events',
+      'title': AppStrings.events,
       'icon': FontAwesomeIcons.listCheck,
       'route': Routes.eventsScreen,
     },
@@ -63,8 +64,8 @@ class _HomeScreenState extends State<HomeScreen> {
               SliverToBoxAdapter(child: SizedBox(height: 17.h)),
               SliverToBoxAdapter(
                 child: CustomRowText(
-                  firstText: 'Last News',
-                  secondtText: 'See All',
+                  firstText: AppStrings.lastNews,
+                  secondtText: AppStrings.seeAll,
                   onTap: () => context.pushNamed(Routes.newsScreen),
                 ),
               ),
@@ -73,8 +74,8 @@ class _HomeScreenState extends State<HomeScreen> {
               SliverToBoxAdapter(child: SizedBox(height: 23.h)),
               SliverToBoxAdapter(
                 child: CustomRowText(
-                  firstText: 'Achievements',
-                  secondtText: 'See All',
+                  firstText: AppStrings.achievements,
+                  secondtText: AppStrings.seeAll,
                   onTap: () => context.pushNamed(Routes.achievementsScreen),
                 ),
               ),

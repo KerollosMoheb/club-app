@@ -1,5 +1,6 @@
-import 'package:club_app/core/themeing/app_colors.dart';
-import 'package:club_app/core/themeing/app_textstyles.dart';
+import 'package:club_app/core/utils/app_colors.dart';
+import 'package:club_app/core/utils/app_strings.dart';
+import 'package:club_app/core/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -22,13 +23,16 @@ class MembershipRenewalContainer extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'Membership Renewal',
+                  AppStrings.membershipRenewal,
                   style: AppTextstyles.font16alreadyTextW600.copyWith(
                     color: Color(0xff0A0A0A),
                   ),
                 ),
                 Spacer(),
-                Text('STEP 3 OF 3', style: AppTextstyles.font14darkerGreyW400),
+                Text(
+                  AppStrings.step3Of3,
+                  style: AppTextstyles.font14darkerGreyW400,
+                ),
               ],
             ),
             SizedBox(height: 8.h),

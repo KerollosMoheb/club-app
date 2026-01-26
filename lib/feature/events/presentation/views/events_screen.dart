@@ -1,4 +1,6 @@
 import 'package:club_app/core/helper/extentions.dart';
+import 'package:club_app/core/utils/app_images.dart';
+import 'package:club_app/core/utils/app_strings.dart';
 import 'package:club_app/core/widgets/custom_app_bar.dart';
 import 'package:club_app/feature/events/data/event_model.dart';
 import 'package:club_app/feature/events/presentation/widgets/events_card.dart';
@@ -16,30 +18,30 @@ class EventsScreen extends StatefulWidget {
 class _EventsScreenState extends State<EventsScreen> {
   int selectedIndex = 0;
   final List<String> categories = [
-    'All',
-    'Competition',
-    'Workshop',
-    'Education',
+    AppStrings.all,
+    AppStrings.competition,
+    AppStrings.workshop,
+    AppStrings.education,
   ];
 
   final List<EventModel> allEvents = [
     EventModel(
-      image: 'assets/images/marathon.png',
-      title: 'Annual Marathon Challenge',
-      date: '20 Jan 2026',
-      time: '6:00 AM',
-      location: 'Track',
-      members: '156/200',
-      category: 'Competition',
+      image: Assets.imagesMarathon,
+      title: AppStrings.annualMarathonChallenge,
+      date: AppStrings.marathonDate,
+      time: AppStrings.marathonTime,
+      location: AppStrings.trackLocation,
+      members: AppStrings.marathonMembers,
+      category: AppStrings.competition,
     ),
     EventModel(
-      image: 'assets/images/yoga.png',
-      title: 'Yoga & Wellness Workshop',
-      date: '22 Jan 2026',
-      time: '10:00 AM',
-      location: 'Studio A',
-      members: '22 / 30',
-      category: 'Workshop',
+      image: Assets.imagesYoga,
+      title: AppStrings.yogaWellnessWorkshop,
+      date: AppStrings.yogaDate,
+      time: AppStrings.yogaTime,
+      location: AppStrings.studioALocation,
+      members: AppStrings.yogaMembers,
+      category: AppStrings.workshop,
     ),
   ];
 
@@ -52,7 +54,7 @@ class _EventsScreenState extends State<EventsScreen> {
               .toList();
 
     return Scaffold(
-      appBar: customAppBar(() => context.pop(), 'Upcoming Events'),
+      appBar: customAppBar(() => context.pop(), AppStrings.upcomingEvents),
       body: SafeArea(
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 26.w),

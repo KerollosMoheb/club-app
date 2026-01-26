@@ -1,5 +1,6 @@
-import 'package:club_app/core/themeing/app_colors.dart';
-import 'package:club_app/core/themeing/app_textstyles.dart';
+import 'package:club_app/core/utils/app_colors.dart';
+import 'package:club_app/core/utils/app_strings.dart';
+import 'package:club_app/core/utils/app_textstyles.dart';
 import 'package:club_app/core/widgets/custom_button.dart';
 import 'package:club_app/feature/events/data/event_model.dart';
 import 'package:club_app/feature/events/presentation/widgets/category_size.dart';
@@ -50,7 +51,7 @@ class EventsCard extends StatelessWidget {
           CustomButton(
             width: 100.w,
             height: 32.h,
-            text: 'Register',
+            text: AppStrings.register,
             onTap: () {},
             color: AppColors.mainGreen,
             style: AppTextstyles.font16alreadyTextW600.copyWith(

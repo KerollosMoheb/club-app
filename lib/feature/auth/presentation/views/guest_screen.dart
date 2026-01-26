@@ -1,7 +1,9 @@
 import 'package:club_app/core/helper/extentions.dart';
 import 'package:club_app/core/routing/routes.dart';
-import 'package:club_app/core/themeing/app_colors.dart';
-import 'package:club_app/core/themeing/app_textstyles.dart';
+import 'package:club_app/core/utils/app_colors.dart';
+import 'package:club_app/core/utils/app_images.dart';
+import 'package:club_app/core/utils/app_strings.dart';
+import 'package:club_app/core/utils/app_textstyles.dart';
 import 'package:club_app/core/widgets/custom_app_bar.dart';
 import 'package:club_app/core/widgets/custom_button.dart';
 import 'package:club_app/core/widgets/custom_text_form_field.dart';
@@ -22,17 +24,12 @@ class GuestScreen extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(height: 64.h),
-              Center(
-                child: Image.asset(
-                  'assets/images/Smouha_SC_logo 1.png',
-                  height: 165,
-                ),
-              ),
+              Center(child: Image.asset(Assets.imagesItihad, height: 165)),
               SizedBox(height: 84.h),
-              CustomTextFormField(text: 'Email'),
+              CustomTextFormField(text: AppStrings.email),
               SizedBox(height: 30.h),
               CustomButton(
-                text: 'Continue',
+                text: AppStrings.continueText,
                 color: AppColors.mainGreen,
                 style: AppTextstyles.font20whiteW600,
                 onTap: () {
@@ -43,14 +40,14 @@ class GuestScreen extends StatelessWidget {
               Text('or', style: AppTextstyles.font20orTextW400),
               SizedBox(height: 26.h),
               GoogleAndFacebook(
-                imagePath: 'assets/images/devicon_google.png',
-                text: 'Continue with Google',
+                imagePath: Assets.imagesGoogle,
+                text: AppStrings.continueWithGoogle,
                 onTap: () {},
               ),
               SizedBox(height: 24.h),
               GoogleAndFacebook(
-                imagePath: 'assets/images/logos_facebook.png',
-                text: 'Continue with Facebook',
+                imagePath: Assets.imagesFacebook,
+                text: AppStrings.continueWithFacebook,
                 onTap: () {},
               ),
               SizedBox(height: 24.h),

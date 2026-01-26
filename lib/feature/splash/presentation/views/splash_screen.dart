@@ -1,6 +1,8 @@
 import 'package:club_app/core/helper/extentions.dart';
 import 'package:club_app/core/routing/routes.dart';
-import 'package:club_app/core/themeing/app_textstyles.dart';
+import 'package:club_app/core/utils/app_images.dart';
+import 'package:club_app/core/utils/app_strings.dart';
+import 'package:club_app/core/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -27,14 +29,12 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           children: [
             SizedBox(height: 305.h),
-            Center(
-              child: Image.asset(
-                'assets/images/Smouha_SC_logo 1.png',
-                height: 165,
-              ),
-            ),
+            Center(child: Image.asset(Assets.imagesItihad, height: 165)),
             Spacer(),
-            Text('Powered by ifikra', style: AppTextstyles.font14mainGreenW500),
+            Text(
+              AppStrings.poweredBy,
+              style: AppTextstyles.font14mainGreenW500,
+            ),
             SizedBox(height: 37.h),
           ],
         ),

@@ -1,3 +1,5 @@
+import 'package:club_app/core/utils/app_images.dart';
+
 class NavItem {
   final String activeImage;
   final String inactiveImage;
@@ -12,23 +14,23 @@ class NavItem {
 
 final List<NavItem> navItems = [
   NavItem(
-    activeImage: 'assets/images/homeActive.png',
-    inactiveImage: 'assets/images/homeInActive.png',
+    activeImage: Assets.imagesHomeActive,
+    inactiveImage: Assets.imagesHomeInActive,
     label: 'Home',
   ),
   NavItem(
-    activeImage: 'assets/images/servicesActive.png',
-    inactiveImage: 'assets/images/servicesInActive.png',
+    activeImage: Assets.imagesServicesActive,
+    inactiveImage: Assets.imagesServicesInActive,
     label: 'Services',
   ),
   NavItem(
-    activeImage: 'assets/images/matchesActive.png',
-    inactiveImage: 'assets/images/matchesInActive.png',
+    activeImage: Assets.imagesMatchesActive,
+    inactiveImage: Assets.imagesMatchesInActive,
     label: 'Matches',
   ),
   NavItem(
-    activeImage: 'assets/images/moreActive.png',
-    inactiveImage: 'assets/images/moreInActive.png',
+    activeImage: Assets.imagesMoreActive,
+    inactiveImage: Assets.imagesMoreInActive,
     label: 'More',
   ),
 ];

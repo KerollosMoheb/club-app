@@ -1,5 +1,6 @@
-import 'package:club_app/core/themeing/app_colors.dart';
-import 'package:club_app/core/themeing/app_textstyles.dart';
+import 'package:club_app/core/utils/app_colors.dart';
+import 'package:club_app/core/utils/app_strings.dart';
+import 'package:club_app/core/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -25,7 +26,7 @@ class CallInfo extends StatelessWidget {
                 Icon(FontAwesomeIcons.whatsapp, color: AppColors.mainGreen),
                 SizedBox(width: 10.w),
                 Text(
-                  'WhatsApp',
+                  AppStrings.whatsapp,
                   style: AppTextstyles.font20mainGreenW600.copyWith(
                     fontSize: 18,
                   ),
@@ -48,7 +49,7 @@ class CallInfo extends StatelessWidget {
               Icon(FontAwesomeIcons.phone, color: AppColors.mainGreen),
               SizedBox(width: 10.w),
               Text(
-                'Call',
+                AppStrings.callNow,
                 style: AppTextstyles.font20mainGreenW600.copyWith(fontSize: 18),
               ),
             ],

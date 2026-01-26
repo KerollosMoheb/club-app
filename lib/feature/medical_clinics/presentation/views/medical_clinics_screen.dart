@@ -1,5 +1,7 @@
 import 'package:club_app/core/helper/extentions.dart';
 import 'package:club_app/core/routing/routes.dart';
+import 'package:club_app/core/utils/app_images.dart';
+import 'package:club_app/core/utils/app_strings.dart';
 import 'package:club_app/core/widgets/custom_app_bar.dart';
 import 'package:club_app/feature/medical_clinics/data/doctor_model.dart';
 import 'package:club_app/feature/medical_clinics/presentation/widgets/doctors_info.dart';
@@ -18,47 +20,45 @@ class _MedicalClinicsScreenState extends State<MedicalClinicsScreen> {
   int _selectedCategoryIndex = 0;
 
   final List<String> categories = [
-    'All',
-    'Emergency Clinic',
-    'Nutrition Clinic',
-    'Eyes',
-    'Teeth',
+    AppStrings.all,
+    AppStrings.emergencyClinic,
+    AppStrings.nutritionClinic,
+    AppStrings.eyes,
+    AppStrings.teeth,
   ];
 
   final List<DoctorModel> allDoctors = [
     DoctorModel(
-      image: "assets/images/femaleDoctor.png",
+      image: Assets.imagesFemaleDoctor,
       name: "Dr. Rasha Saleh",
-      location:
-          "Emergency clinic at the medical clinics complex in front of Gate 1",
-      specialty: "Specialty: Emergency Clinic",
-      available: "Available: Sat - Fri",
-      category: "Emergency Clinic",
+      location: AppStrings.emergencyClinicLocation,
+      specialty: AppStrings.emergencyClinicSpecialty,
+      available: AppStrings.emergencyClinicAvailability,
+      category: AppStrings.emergencyClinic,
     ),
     DoctorModel(
-      image: "assets/images/maleDoctor.png",
-      name: "Dr. Mahmoud Naggar",
-      location: "Ophthalmology clinic in front of Gate 1",
-      specialty: "Specialty: Eyes",
-      available: "Available: Sun, Tue, Wed",
-      category: "Eyes",
+      image: Assets.imagesMaleDoctor,
+      name: AppStrings.drMahmoudNaggar,
+      location: AppStrings.ophthalmologyClinicLocation,
+      specialty: AppStrings.ophthalmologyClinicSpecialty,
+      available: AppStrings.ophthalmologyClinicAvailability,
+      category: AppStrings.eyes,
     ),
     DoctorModel(
-      image: "assets/images/femaleDoctor.png",
-      name: "Dr.Nada Tariq",
-      location:
-          "Pediatric Specialist “The price is determined based on the service provided”",
-      specialty: "Specialty: Eyes",
-      available: "Available: Sun, Tue, Wed",
-      category: "Eyes",
+      image: Assets.imagesFemaleDoctor,
+      name: AppStrings.drNadaTariq,
+      location: AppStrings.pediatricSpecialist,
+      specialty: AppStrings.pediatricSpecialistSpecialty,
+      available: AppStrings.pediatricSpecialistAvailability,
+      category: AppStrings.eyes,
     ),
     DoctorModel(
-      image: "assets/images/maleDoctor.png",
-      name: "Dr. Mazen Abo Srea",
-      location: "Olympic Swimming Pool situated directly behind Mirage Hotel ",
-      specialty: "Specialty: Teeth",
-      available: "Available: Sun, Tue, Wed",
-      category: "Teeth",
+      image: Assets.imagesMaleDoctor,
+      name: AppStrings.drMazenAboSrea,
+      location: AppStrings.olympicSwimmingPool,
+      specialty: AppStrings.specialtyEmergencyClinic,
+      available: AppStrings.availableSaturdayThursdayFriday,
+      category: AppStrings.emergencyClinic,
     ),
   ];
 
@@ -73,7 +73,7 @@ class _MedicalClinicsScreenState extends State<MedicalClinicsScreen> {
               .toList();
 
     return Scaffold(
-      appBar: customAppBar(() => context.pop(), "Medical Clinics"),
+      appBar: customAppBar(() => context.pop(), AppStrings.medicalClinics),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 26),

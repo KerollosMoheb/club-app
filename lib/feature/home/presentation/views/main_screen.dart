@@ -1,6 +1,6 @@
-import 'package:club_app/core/themeing/app_colors.dart';
+import 'package:club_app/core/utils/app_colors.dart';
 import 'package:club_app/feature/home/data/nav_item.dart';
-import 'package:club_app/feature/home/presentation/home_screen.dart';
+import 'package:club_app/feature/home/presentation/views/home_screen.dart';
 import 'package:club_app/feature/matches/presentation/views/matches_screen.dart';
 import 'package:club_app/feature/services/presentation/services_screen.dart';
 import 'package:flutter/material.dart';

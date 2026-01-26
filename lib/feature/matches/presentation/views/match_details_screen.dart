@@ -1,5 +1,6 @@
-import 'package:club_app/core/themeing/app_colors.dart';
-import 'package:club_app/core/themeing/app_textstyles.dart';
+import 'package:club_app/core/utils/app_colors.dart';
+import 'package:club_app/core/utils/app_strings.dart';
+import 'package:club_app/core/utils/app_textstyles.dart';
 import 'package:club_app/core/widgets/custom_app_bar.dart';
 import 'package:club_app/feature/matches/presentation/widgets/build_match_header.dart';
 import 'package:club_app/feature/matches/presentation/widgets/build_standing_view.dart';
@@ -100,7 +101,7 @@ class _MatchDetailsScreenState extends State<MatchDetailsScreen> {
                   ),
                   alignment: Alignment.center,
                   child: Text(
-                    "Statistic",
+                    AppStrings.statistic,
                     style: _selectedTabIndex == 0
                         ? AppTextstyles.font20whiteW600.copyWith(
                             fontWeight: FontWeight.w500,
@@ -129,7 +130,7 @@ class _MatchDetailsScreenState extends State<MatchDetailsScreen> {
                   ),
                   alignment: Alignment.center,
                   child: Text(
-                    "Standing",
+                    AppStrings.standing,
                     style: _selectedTabIndex == 1
                         ? AppTextstyles.font20whiteW600.copyWith(
                             fontWeight: FontWeight.w500,

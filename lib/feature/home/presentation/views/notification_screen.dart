@@ -1,7 +1,8 @@
 import 'package:club_app/core/helper/extentions.dart';
 import 'package:club_app/core/routing/routes.dart';
-import 'package:club_app/core/themeing/app_colors.dart';
-import 'package:club_app/core/themeing/app_textstyles.dart';
+import 'package:club_app/core/utils/app_colors.dart';
+import 'package:club_app/core/utils/app_strings.dart';
+import 'package:club_app/core/utils/app_textstyles.dart';
 import 'package:club_app/core/widgets/custom_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -24,16 +25,15 @@ class NotificationScreen extends StatelessWidget {
               child: Column(
                 children: [
                   customNotification(
-                    title: 'Login OTP',
-                    subtitle: 'Your OTP for login is: 852000',
-                    date: '5 Jan 2026, 2:19',
+                    title: AppStrings.loginOtp,
+                    subtitle: AppStrings.yourOTP,
+                    date: AppStrings.jan20265,
                   ),
                   SizedBox(height: 20.h),
                   customNotification(
-                    title: 'Document Review Successful',
-                    subtitle:
-                        'Your membership renewal request has been approved. Please proceed to the payment page to finalize your application.',
-                    date: '10 Jan 2026, 2:19',
+                    title: AppStrings.documentReviewSuccessful,
+                    subtitle: AppStrings.membershipRenewalRequest,
+                    date: AppStrings.jan202610,
                     showPayButton: true,
                     onTap: () {
                       context.pushNamed(Routes.paymentDetailsScreen);

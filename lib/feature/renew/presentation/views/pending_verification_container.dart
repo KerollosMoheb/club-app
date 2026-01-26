@@ -1,4 +1,5 @@
-import 'package:club_app/core/themeing/app_textstyles.dart';
+import 'package:club_app/core/utils/app_strings.dart';
+import 'package:club_app/core/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -19,7 +20,7 @@ class PendingVerificationContainer extends StatelessWidget {
           Icon(Icons.circle, color: Color(0xffEAB308), size: 10.w),
           SizedBox(width: 5.w),
           Text(
-            'Pending Verification',
+            AppStrings.pendingVerification,
             style: AppTextstyles.font16alreadyTextW600.copyWith(
               fontWeight: FontWeight.w500,
               color: Color(0xffA56913),

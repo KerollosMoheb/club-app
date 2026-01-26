@@ -1,5 +1,6 @@
-import 'package:club_app/core/themeing/app_colors.dart';
-import 'package:club_app/core/themeing/app_textstyles.dart';
+import 'package:club_app/core/utils/app_colors.dart';
+import 'package:club_app/core/utils/app_strings.dart';
+import 'package:club_app/core/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -14,7 +15,7 @@ class CategorySize extends StatelessWidget {
       children: [
         _buildBadge(category, AppColors.mainGreen),
         SizedBox(width: 30.w),
-        _buildBadge('Almost Full', const Color(0xffFF0000)),
+        _buildBadge(AppStrings.almostFull, const Color(0xffFF0000)),
       ],
     );
   }

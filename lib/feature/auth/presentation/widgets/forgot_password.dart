@@ -1,4 +1,5 @@
-import 'package:club_app/core/themeing/app_textstyles.dart';
+import 'package:club_app/core/utils/app_strings.dart';
+import 'package:club_app/core/utils/app_textstyles.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +17,7 @@ class ForgotPassword extends StatelessWidget {
           text: TextSpan(
             children: [
               TextSpan(
-                text: 'Forgot Password?',
+                text: AppStrings.forgotPassword,
                 style: AppTextstyles.font15alreadyTextW500,
                 recognizer: TapGestureRecognizer()
                   ..onTap = () {
