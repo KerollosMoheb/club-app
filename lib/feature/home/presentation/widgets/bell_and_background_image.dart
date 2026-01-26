@@ -1,5 +1,6 @@
 import 'package:club_app/core/helper/extentions.dart';
 import 'package:club_app/core/routing/routes.dart';
+import 'package:club_app/core/utils/app_images.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -10,7 +11,7 @@ class BellAndBackgroundImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Image.asset('assets/images/backGround_itihad.png'),
+        Image.asset(Assets.imagesBackGroundItihad),
         Positioned(
           top: 5.h,
           right: 9.w,
@@ -18,7 +19,7 @@ class BellAndBackgroundImage extends StatelessWidget {
             onPressed: () {
               context.pushNamed(Routes.notificationScreen);
             },
-            icon: Image.asset('assets/images/notifications.png', width: 16.sp),
+            icon: Image.asset(Assets.imagesNotifications, width: 16.sp),
           ),
         ),
       ],

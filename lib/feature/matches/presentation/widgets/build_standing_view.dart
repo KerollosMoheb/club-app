@@ -1,5 +1,7 @@
-import 'package:club_app/core/themeing/app_colors.dart';
-import 'package:club_app/core/themeing/app_textstyles.dart';
+import 'package:club_app/core/utils/app_colors.dart';
+import 'package:club_app/core/utils/app_images.dart';
+import 'package:club_app/core/utils/app_strings.dart';
+import 'package:club_app/core/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -11,10 +13,10 @@ Widget buildStandingView() {
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset('assets/images/cup.png', width: 26.w),
+            Image.asset(Assets.imagesCup, width: 26.w),
             SizedBox(width: 8.w),
             Text(
-              "League Cup 25/26, Group C",
+              AppStrings.leagueCup,
               style: AppTextstyles.font18blackW500.copyWith(fontSize: 16),
             ),
           ],

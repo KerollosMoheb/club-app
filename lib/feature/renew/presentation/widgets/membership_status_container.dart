@@ -1,5 +1,6 @@
-import 'package:club_app/core/themeing/app_colors.dart';
-import 'package:club_app/core/themeing/app_textstyles.dart';
+import 'package:club_app/core/utils/app_colors.dart';
+import 'package:club_app/core/utils/app_strings.dart';
+import 'package:club_app/core/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -31,40 +32,40 @@ class MembershipStatusContainer extends StatelessWidget {
                   ),
                   SizedBox(width: 12.w),
                   Text(
-                    'Current Membership Status',
+                    AppStrings.currentMembershipStatus,
                     style: AppTextstyles.font14blackW500,
                   ),
                 ],
               ),
               SizedBox(height: 20.h),
               Text(
-                'Balanced Membership',
+                AppStrings.balancedMembership,
                 style: AppTextstyles.font10blackW300.copyWith(fontSize: 14),
               ),
               SizedBox(height: 33.h),
               Text(
-                'Renewal Date ',
+                AppStrings.renewalDate,
                 style: AppTextstyles.font14blackW600.copyWith(
                   fontWeight: FontWeight.w400,
                 ),
               ),
               SizedBox(height: 10.h),
               Text(
-                '20 Dec 2026',
+                AppStrings.renewalDateValue,
                 style: AppTextstyles.font14blackW600.copyWith(
                   fontWeight: FontWeight.w300,
                 ),
               ),
               SizedBox(height: 33.h),
               Text(
-                'Member Since ',
+                AppStrings.memberSince,
                 style: AppTextstyles.font14blackW600.copyWith(
                   fontWeight: FontWeight.w400,
                 ),
               ),
               SizedBox(height: 10.h),
               Text(
-                'Feb 2018',
+                AppStrings.memberSinceValue,
                 style: AppTextstyles.font14blackW600.copyWith(
                   fontWeight: FontWeight.w300,
                 ),

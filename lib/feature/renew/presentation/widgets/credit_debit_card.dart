@@ -1,5 +1,6 @@
-import 'package:club_app/core/themeing/app_colors.dart';
-import 'package:club_app/core/themeing/app_textstyles.dart';
+import 'package:club_app/core/utils/app_colors.dart';
+import 'package:club_app/core/utils/app_strings.dart';
+import 'package:club_app/core/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -23,7 +24,10 @@ class CreditDebitCard extends StatelessWidget {
         children: [
           _buildHeader(),
           SizedBox(height: 10.h),
-          Text('CARD NUMBER', style: AppTextstyles.font14blackW500),
+          Text(
+            AppStrings.cardNumberLabel,
+            style: AppTextstyles.font14blackW500,
+          ),
           SizedBox(height: 10.h),
           TextField(decoration: _buildInputDecoration('0000 0000 0000 0000')),
           SizedBox(height: 10.h),
@@ -51,7 +55,10 @@ class CreditDebitCard extends StatelessWidget {
       children: [
         Icon(FontAwesomeIcons.creditCard, size: 20),
         SizedBox(width: 12.w),
-        Text('Credit or Debit Card', style: AppTextstyles.font14blackW500),
+        Text(
+          AppStrings.creditOrDebitCard,
+          style: AppTextstyles.font14blackW500,
+        ),
         const Spacer(),
         Radio(
           value: true,
@@ -67,7 +74,10 @@ class CreditDebitCard extends StatelessWidget {
     return Row(
       children: [
         Expanded(
-          child: Text('EXPIRY DATE', style: AppTextstyles.font14blackW500),
+          child: Text(
+            AppStrings.expiryDateLabel,
+            style: AppTextstyles.font14blackW500,
+          ),
         ),
         SizedBox(width: 20.w),
         Expanded(child: Text('CVV', style: AppTextstyles.font14blackW500)),

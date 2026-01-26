@@ -1,4 +1,5 @@
 import 'package:club_app/core/helper/extentions.dart';
+import 'package:club_app/core/utils/app_strings.dart';
 import 'package:club_app/core/widgets/custom_app_bar.dart';
 import 'package:club_app/feature/home/presentation/widgets/achievements_widget.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +13,7 @@ class AchievementsScreen extends StatelessWidget {
     return Scaffold(
       appBar: customAppBar(() {
         context.pop();
-      }, 'Achievements'),
+      }, AppStrings.achievements),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(

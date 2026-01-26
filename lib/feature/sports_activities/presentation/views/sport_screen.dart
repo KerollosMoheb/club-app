@@ -1,6 +1,7 @@
 import 'package:club_app/core/helper/extentions.dart';
-import 'package:club_app/core/themeing/app_colors.dart';
-import 'package:club_app/core/themeing/app_textstyles.dart';
+import 'package:club_app/core/utils/app_colors.dart';
+import 'package:club_app/core/utils/app_strings.dart';
+import 'package:club_app/core/utils/app_textstyles.dart';
 import 'package:club_app/core/widgets/custom_app_bar.dart';
 import 'package:club_app/core/widgets/custom_button.dart';
 import 'package:club_app/feature/medical_clinics/presentation/widgets/call_info.dart';
@@ -49,7 +50,7 @@ class SportScreen extends StatelessWidget {
                   Divider(),
                   SizedBox(height: 18.h),
                   Text(
-                    'Working Hours',
+                    AppStrings.workingHours,
                     style: AppTextstyles.font16alreadyTextW600.copyWith(
                       color: Colors.black,
                     ),
@@ -68,7 +69,7 @@ class SportScreen extends StatelessWidget {
                       ),
                       SizedBox(width: 5.w),
                       Text(
-                        'Plunge Pool',
+                        AppStrings.plungePool,
                         style: AppTextstyles.font14blackW500.copyWith(
                           fontWeight: FontWeight.w400,
                         ),
@@ -80,7 +81,7 @@ class SportScreen extends StatelessWidget {
                   SizedBox(height: 11.h),
                   Center(
                     child: CustomButton(
-                      text: 'Book Now',
+                      text: AppStrings.bookNow,
                       color: AppColors.mainGreen,
                       style: AppTextstyles.font20whiteW600,
                     ),

@@ -1,5 +1,7 @@
-import 'package:club_app/core/themeing/app_colors.dart';
-import 'package:club_app/core/themeing/app_textstyles.dart';
+import 'package:club_app/core/utils/app_colors.dart';
+import 'package:club_app/core/utils/app_images.dart';
+import 'package:club_app/core/utils/app_strings.dart';
+import 'package:club_app/core/utils/app_textstyles.dart';
 import 'package:club_app/feature/home/presentation/widgets/custom_home_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -19,12 +21,12 @@ class AchievementsWidget extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Image.asset('assets/images/tennis.png'),
+          Image.asset(Assets.imagesTennis),
           SizedBox(height: 10.h),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 21.w),
             child: Text(
-              'A New Global Achievement for a Smouha Athlete ',
+              AppStrings.achievementTitle,
               style: AppTextstyles.font14blackW600.copyWith(fontSize: 18),
             ),
           ),
@@ -32,18 +34,18 @@ class AchievementsWidget extends StatelessWidget {
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 21.w),
             child: Text(
-              'Smouha Sporting Club extends its sincere congratulations to professional player Nour Ashraf Heikal, Smouha Club athlete, on joining the Egyptian National Squash Team 🇪🇬',
+              AppStrings.achievementSubTitle,
               style: AppTextstyles.font11blackW400.copyWith(fontSize: 14),
               overflow: TextOverflow.ellipsis,
-              maxLines: 3,
+              maxLines: 4,
             ),
           ),
           SizedBox(height: 10.h),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 21.w),
             child: CustomRowText(
-              firstText: 'abdullah',
-              secondtText: '1 Jan, 2026',
+              firstText: AppStrings.abdullah,
+              secondtText: AppStrings.jan20261,
               style1: AppTextstyles.font14lightGreenW300,
               style2: AppTextstyles.font14lightGreenW300,
             ),

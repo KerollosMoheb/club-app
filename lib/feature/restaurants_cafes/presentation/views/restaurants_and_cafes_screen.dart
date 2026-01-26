@@ -1,5 +1,7 @@
 import 'package:club_app/core/helper/extentions.dart';
 import 'package:club_app/core/routing/routes.dart';
+import 'package:club_app/core/utils/app_images.dart';
+import 'package:club_app/core/utils/app_strings.dart';
 import 'package:club_app/core/widgets/custom_app_bar.dart';
 import 'package:club_app/feature/restaurants_cafes/data/restaurants_cafes_model.dart';
 import 'package:club_app/feature/restaurants_cafes/presentation/widgets/restaurant_cafe_info.dart';
@@ -17,21 +19,19 @@ class RestaurantsAndCafesScreen extends StatefulWidget {
 class _RestaurantsAndCafesScreenState extends State<RestaurantsAndCafesScreen> {
   final List<RestaurantsCafesModel> allRestaurantsCafes = [
     RestaurantsCafesModel(
-      image: 'assets/images/abuAuf.png',
-      name: 'Abu Auf',
-      details:
-          'Explore exquisite flavors at Abu Auf, your destination for premium coffee, nuts, and healthful delights. Elevate your taste experience with Abu Auf Now!',
+      image: Assets.imagesAbuAuf,
+      name: AppStrings.abuAuf,
+      details: AppStrings.abuAufDetails,
     ),
     RestaurantsCafesModel(
-      image: 'assets/images/albaraka.png',
-      name: 'Al Baraka',
-      details: 'El Baraka on your mind? Order your meal now and enjoy!',
+      image: Assets.imagesAlbaraka,
+      name: AppStrings.alBaraka,
+      details: AppStrings.alBarakaDetails,
     ),
     RestaurantsCafesModel(
-      image: 'assets/images/abuAuf.png',
-      name: 'Abu Auf',
-      details:
-          'Explore exquisite flavors at Abu Auf, your destination for premium coffee, nuts, and healthful delights. Elevate your taste experience with Abu Auf Now!',
+      image: Assets.imagesAbuAuf,
+      name: AppStrings.abuAuf,
+      details: AppStrings.abuAufDetails,
     ),
   ];
   @override
@@ -39,7 +39,7 @@ class _RestaurantsAndCafesScreenState extends State<RestaurantsAndCafesScreen> {
     return Scaffold(
       appBar: customAppBar(() {
         context.pop();
-      }, 'Restaurants & Cafes'),
+      }, AppStrings.restaurantsCafes),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 26),

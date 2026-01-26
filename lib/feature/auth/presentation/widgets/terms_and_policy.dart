@@ -1,5 +1,6 @@
-import 'package:club_app/core/themeing/app_colors.dart';
-import 'package:club_app/core/themeing/app_textstyles.dart';
+import 'package:club_app/core/utils/app_colors.dart';
+import 'package:club_app/core/utils/app_strings.dart';
+import 'package:club_app/core/utils/app_textstyles.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
@@ -13,11 +14,11 @@ class TermsAndPolicy extends StatelessWidget {
       text: TextSpan(
         children: [
           TextSpan(
-            text: 'By continuing, you have read and agree to\n Re-lease’s?',
+            text: AppStrings.bycontinuing,
             style: AppTextstyles.font14blackW500,
           ),
           TextSpan(
-            text: ' Terms of Use ',
+            text: AppStrings.termsOfUse,
             style: AppTextstyles.font14blackW500.copyWith(
               color: AppColors.mainGreen,
               height: 1.5,
@@ -27,9 +28,9 @@ class TermsAndPolicy extends StatelessWidget {
                 // context.pushReplacementNamed(Routes.privacyPilicyScreen);
               },
           ),
-          TextSpan(text: 'and ', style: AppTextstyles.font14blackW500),
+          TextSpan(text: AppStrings.and, style: AppTextstyles.font14blackW500),
           TextSpan(
-            text: 'Privacy Policy?',
+            text: AppStrings.privacyPolicy,
             style: AppTextstyles.font14blackW500.copyWith(
               color: AppColors.mainGreen,
             ),

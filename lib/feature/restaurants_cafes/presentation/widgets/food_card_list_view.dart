@@ -1,3 +1,5 @@
+import 'package:club_app/core/utils/app_images.dart';
+import 'package:club_app/core/utils/app_strings.dart';
 import 'package:club_app/feature/restaurants_cafes/data/food_item_model.dart';
 import 'package:club_app/feature/restaurants_cafes/presentation/widgets/food_card.dart';
 import 'package:flutter/material.dart';
@@ -12,19 +14,19 @@ class FoodCardListView extends StatefulWidget {
 class _FoodCardListViewState extends State<FoodCardListView> {
   static List<FoodItemModel> foodItems = [
     FoodItemModel(
-      image: 'assets/images/peanutButter.png',
-      title: 'Abu Auf Chocolate Peanut Butter - 330 Gm',
-      price: 'EGP 125.00',
+      image: Assets.imagesPeanutButter,
+      title: AppStrings.abuAufChocolatePeanutButter,
+      price: AppStrings.priceEgp125,
     ),
     FoodItemModel(
-      image: 'assets/images/datePlain.png',
-      title: 'Abu Auf Date Spread Plain - 230 Gm',
-      price: 'EGP 75.00',
+      image: Assets.imagesDatePlain,
+      title: AppStrings.abuAufDateSpreadPlain,
+      price: AppStrings.priceEgp75,
     ),
     FoodItemModel(
-      image: 'assets/images/dateCinnamon.png',
-      title: 'Abu Auf Date Spread Cinnamon - 230 Gm',
-      price: 'EGP 75.00',
+      image: Assets.imagesDateCinnamon,
+      title: AppStrings.abuAufDateSpreadCinnamon,
+      price: AppStrings.priceEgp75,
     ),
   ];
 

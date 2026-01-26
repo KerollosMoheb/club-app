@@ -1,3 +1,4 @@
+import 'package:club_app/core/utils/app_strings.dart';
 import 'package:club_app/feature/restaurants_cafes/presentation/widgets/time_and_eat_method.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -10,14 +11,14 @@ Widget buildBadges() {
         icon: FontAwesomeIcons.clock,
         colorText: Color(0xff266CED),
         colorBackground: Color(0xffEFF6FF),
-        text: '15-20 min',
+        text: AppStrings.preparationTime15to20,
       ),
       SizedBox(width: 8.w),
       TimeAndEatMethod(
         icon: FontAwesomeIcons.utensils,
         colorText: Color(0xffCA3734),
         colorBackground: Color(0xffFFF7ED),
-        text: 'Dine in',
+        text: AppStrings.dineInTakeaway,
       ),
     ],
   );

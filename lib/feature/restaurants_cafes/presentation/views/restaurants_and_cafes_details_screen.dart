@@ -1,6 +1,7 @@
 import 'package:club_app/core/helper/extentions.dart';
-import 'package:club_app/core/themeing/app_colors.dart';
-import 'package:club_app/core/themeing/app_textstyles.dart';
+import 'package:club_app/core/utils/app_colors.dart';
+import 'package:club_app/core/utils/app_strings.dart';
+import 'package:club_app/core/utils/app_textstyles.dart';
 import 'package:club_app/core/widgets/custom_app_bar.dart';
 import 'package:club_app/core/widgets/custom_button.dart';
 import 'package:club_app/feature/restaurants_cafes/presentation/widgets/build_badges.dart';
@@ -48,18 +49,18 @@ class _DetailsScreenState extends State<RestaurantsAndCafesDetailsScreen> {
               SizedBox(height: 24.h),
               FoodCategories(
                 categories: [
-                  'Healthy Food',
-                  'Hot Drinks',
-                  'Cold Drinks',
-                  'Crackers',
+                  AppStrings.healthyFood,
+                  AppStrings.hotDrinks,
+                  AppStrings.coldDrinks,
+                  AppStrings.crackers,
                 ],
                 selectedIndex: selectedIndex,
                 onCategoryChanged: (i) => setState(() => selectedIndex = i),
               ),
-              buildSectionTitle('Healthy Food'),
+              buildSectionTitle(AppStrings.healthyFood),
               const FoodCardListView(),
               CustomButton(
-                text: 'Call to Order',
+                text: AppStrings.callToOrder,
                 color: AppColors.mainGreen,
                 style: AppTextstyles.font20whiteW600,
               ),

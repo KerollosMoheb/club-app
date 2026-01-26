@@ -1,4 +1,6 @@
-import 'package:club_app/core/themeing/app_textstyles.dart';
+import 'package:club_app/core/utils/app_images.dart';
+import 'package:club_app/core/utils/app_strings.dart';
+import 'package:club_app/core/utils/app_textstyles.dart';
 import 'package:club_app/feature/matches/presentation/widgets/date_selector.dart';
 import 'package:club_app/feature/matches/presentation/widgets/live_match_card.dart';
 import 'package:club_app/feature/matches/presentation/widgets/match_score_card.dart';
@@ -18,11 +20,11 @@ class _MatchesScreenState extends State<MatchesScreen> {
   DateTime _selectedDate = DateTime.now();
 
   final List<Map<String, dynamic>> _categories = [
-    {'name': 'Football', 'icon': Icons.sports_soccer},
-    {'name': 'Basketball', 'icon': Icons.sports_basketball},
-    {'name': 'Volleyball', 'icon': Icons.sports_volleyball},
-    {'name': 'Tennis', 'icon': Icons.sports_tennis},
-    {'name': 'Rugby', 'icon': Icons.sports_rugby},
+    {'name': AppStrings.football, 'icon': Icons.sports_soccer},
+    {'name': AppStrings.basketball, 'icon': Icons.sports_basketball},
+    {'name': AppStrings.volleyball, 'icon': Icons.sports_volleyball},
+    {'name': AppStrings.tennis, 'icon': Icons.sports_tennis},
+    {'name': AppStrings.rugby, 'icon': Icons.sports_rugby},
   ];
 
   @override
@@ -76,9 +78,12 @@ class _MatchesScreenState extends State<MatchesScreen> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("LIVE NOW", style: AppTextstyles.font14blackW600),
                       Text(
-                        "3 MATCHES",
+                        AppStrings.liveNow,
+                        style: AppTextstyles.font14blackW600,
+                      ),
+                      Text(
+                        AppStrings.threeMatches,
                         style: AppTextstyles.font12mainGreenW400,
                       ),
                     ],
@@ -92,25 +97,25 @@ class _MatchesScreenState extends State<MatchesScreen> {
                     padding: EdgeInsets.symmetric(horizontal: 16.w),
                     children: [
                       LiveMatchCard(
-                        homeTeamName: "Itihad",
-                        awayTeamName: "Zamalek",
+                        homeTeamName: AppStrings.itihad,
+                        awayTeamName: AppStrings.zamalek,
                         homeScore: "2",
                         awayScore: "0",
                         time: "30:03",
-                        homeScorers: "Farid 21', 27'",
-                        homeLogo: 'assets/images/Smouha_SC_logo 1.png',
-                        awayLogo: 'assets/images/zamalek.png',
+                        homeScorers: AppStrings.faridScorers,
+                        homeLogo: Assets.imagesItihad,
+                        awayLogo: Assets.imagesZamalek,
                       ),
                       LiveMatchCard(
-                        homeTeamName: "Barca",
-                        awayTeamName: "Real",
+                        homeTeamName: AppStrings.barca,
+                        awayTeamName: AppStrings.real,
                         homeScore: "2",
                         awayScore: "1",
                         time: "60:00",
-                        homeScorers: "messi 12'",
-                        awayScorers: "ronaldo 50'",
-                        homeLogo: 'assets/images/barcelona.png',
-                        awayLogo: 'assets/images/stuttgart.png',
+                        homeScorers: AppStrings.messiScorer,
+                        awayScorers: AppStrings.ronaldoScorer,
+                        homeLogo: Assets.imagesBarcelona,
+                        awayLogo: Assets.imagesStuttgart,
                       ),
                     ],
                   ),
@@ -121,32 +126,32 @@ class _MatchesScreenState extends State<MatchesScreen> {
                   child: Text("SCORES", style: AppTextstyles.font14blackW600),
                 ),
                 SizedBox(height: 12.h),
-                _buildLeagueGroup("Premier League", [
+                _buildLeagueGroup(AppStrings.premierLeague, [
                   const MatchScoreCard(
                     date: "21/1",
                     time: "5:00 PM",
-                    homeTeam: "Al Ittihad Alexandria",
-                    awayTeam: "Ceramica Cleopatra",
-                    homeLogo: 'assets/images/Smouha_SC_logo 1.png',
-                    awayLogo: 'assets/images/ceramica.png',
+                    homeTeam: AppStrings.alIttihadAlexandria,
+                    awayTeam: AppStrings.ceramicaCleopatra,
+                    homeLogo: Assets.imagesItihad,
+                    awayLogo: Assets.imagesCeramica,
                   ),
                   const MatchScoreCard(
                     date: "21/1",
                     time: "8:00 PM",
-                    homeTeam: "Smouha SC",
-                    awayTeam: "Pharco FC",
-                    homeLogo: 'assets/images/smouha.png',
-                    awayLogo: 'assets/images/pharco.png',
+                    homeTeam: AppStrings.smouhaSc,
+                    awayTeam: AppStrings.pharcoFc,
+                    homeLogo: Assets.imagesSmouha,
+                    awayLogo: Assets.imagesPharco,
                   ),
                 ]),
-                _buildLeagueGroup("Champions League", [
+                _buildLeagueGroup(AppStrings.championsLeague, [
                   const MatchScoreCard(
                     date: "20/1",
                     time: "9:00 PM",
-                    homeTeam: "Stuttgart",
-                    awayTeam: "Real Madrid",
-                    homeLogo: 'assets/images/stuttgart.png',
-                    awayLogo: 'assets/images/barcelona.png',
+                    homeTeam: AppStrings.stuttgart,
+                    awayTeam: AppStrings.realMadrid,
+                    homeLogo: Assets.imagesStuttgart,
+                    awayLogo: Assets.imagesBarcelona,
                   ),
                 ]),
                 SizedBox(height: 30.h),

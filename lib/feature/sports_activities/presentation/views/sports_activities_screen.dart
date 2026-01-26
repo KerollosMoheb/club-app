@@ -1,7 +1,9 @@
 import 'package:club_app/core/helper/extentions.dart';
 import 'package:club_app/core/routing/routes.dart';
+import 'package:club_app/core/utils/app_images.dart';
+import 'package:club_app/core/utils/app_strings.dart';
 import 'package:club_app/core/widgets/custom_app_bar.dart';
-import 'package:club_app/feature/splash/sport_model.dart';
+import 'package:club_app/feature/sports_activities/data/sport_model.dart';
 import 'package:club_app/feature/sports_activities/presentation/widgets/sports_categories.dart';
 import 'package:club_app/feature/sports_activities/presentation/widgets/sports_info.dart';
 import 'package:flutter/material.dart';
@@ -18,37 +20,53 @@ class _SportsActivitiesScreenState extends State<SportsActivitiesScreen> {
   int _selectedCategoryIndex = 0;
 
   final List<String> categories = [
-    'All',
-    'Swimming & Water Games',
-    'Football',
-    'Handball',
-    'Volleyball',
+    AppStrings.all,
+    AppStrings.swimmingWaterGames,
+    AppStrings.football,
+    AppStrings.handball,
+    AppStrings.volleyball,
   ];
 
   final List<SportModel> allSports = [
     SportModel(
-      image: "assets/images/waterPolo.png",
-      name: "Water Polo (Academy)",
-      age: "Age: 4 Years - 10 Years",
-      price: "Price: 1500",
-      available: "Available: Saturday, Monday, Wednesday",
-      category: "Swimming & Water Games",
+      image: Assets.imagesWaterPolo,
+      name: AppStrings.waterPoloAcademy,
+      age: AppStrings.ageFourToTen,
+      price: AppStrings.price1500,
+      available: AppStrings.availableDays,
+      category: AppStrings.swimmingWaterGames,
     ),
     SportModel(
-      image: "assets/images/volleyBall.png",
-      name: "Volleyball (Academy)",
-      age: "Age: 7 Years - 8 Years",
-      price: "Price: 1500",
-      available: "Available: Saturday, Monday, Wednesday",
-      category: "Volleyball",
+      image: Assets.imagesVolleyBall,
+      name: AppStrings.volleyballAcademy,
+      age: AppStrings.ageSevenToEight,
+      price: AppStrings.price1500,
+      available: AppStrings.availableDays,
+      category: AppStrings.volleyball,
     ),
     SportModel(
-      image: "assets/images/handBall.png",
-      name: "Handball (Schools)",
-      age: "Age: 8 Years - 16 Years",
-      price: "Price: 1200",
-      available: "Available: Saturday, Monday, Wednesday",
-      category: "Handball",
+      image: Assets.imagesHandBall,
+      name: AppStrings.handballSchools,
+      age: AppStrings.ageEightToSixteen,
+      price: AppStrings.price1200,
+      available: AppStrings.availableDays,
+      category: AppStrings.handball,
+    ),
+    SportModel(
+      image: Assets.imagesBasketball,
+      name: AppStrings.girlsBasketball,
+      age: AppStrings.ageEightToSixteen,
+      price: AppStrings.price1200,
+      available: AppStrings.availableDays,
+      category: AppStrings.basketball,
+    ),
+    SportModel(
+      image: Assets.imagesFootall,
+      name: AppStrings.boysFootball,
+      age: AppStrings.ageEightToSixteen,
+      price: AppStrings.price1200,
+      available: AppStrings.availableDays,
+      category: AppStrings.football,
     ),
   ];
   @override
@@ -62,7 +80,7 @@ class _SportsActivitiesScreenState extends State<SportsActivitiesScreen> {
               .toList();
 
     return Scaffold(
-      appBar: customAppBar(() => context.pop(), "Sports Activities"),
+      appBar: customAppBar(() => context.pop(), AppStrings.sportsActivities),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 26),

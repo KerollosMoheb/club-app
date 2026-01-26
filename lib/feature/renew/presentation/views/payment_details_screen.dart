@@ -1,7 +1,8 @@
 import 'package:club_app/core/helper/extentions.dart';
 import 'package:club_app/core/routing/routes.dart';
-import 'package:club_app/core/themeing/app_colors.dart';
-import 'package:club_app/core/themeing/app_textstyles.dart';
+import 'package:club_app/core/utils/app_colors.dart';
+import 'package:club_app/core/utils/app_strings.dart';
+import 'package:club_app/core/utils/app_textstyles.dart';
 import 'package:club_app/core/widgets/custom_app_bar.dart';
 import 'package:club_app/core/widgets/custom_button.dart';
 import 'package:club_app/feature/renew/presentation/widgets/credit_debit_card.dart';
@@ -19,7 +20,7 @@ class PaymentDetailsScreen extends StatelessWidget {
     return Scaffold(
       appBar: customAppBar(() {
         context.pop();
-      }, 'Payment Details'),
+      }, AppStrings.paymentDetails),
       body: SafeArea(
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 30.w),
@@ -31,7 +32,7 @@ class PaymentDetailsScreen extends StatelessWidget {
                 MembershipRenewalContainer(),
                 SizedBox(height: 16.h),
                 Text(
-                  'Order Summary',
+                  AppStrings.orderSummary,
                   style: AppTextstyles.font16alreadyTextW600.copyWith(
                     color: Color(0xff0A0A0A),
                     fontSize: 18,
@@ -39,15 +40,18 @@ class PaymentDetailsScreen extends StatelessWidget {
                 ),
                 SizedBox(height: 16.h),
                 CustomPaymentRow(
-                  title: 'Premium Annual Membership',
+                  title: AppStrings.premiumAnnualMembership,
                   price: '1157.97',
                 ),
                 SizedBox(height: 12.h),
-                CustomPaymentRow(title: 'Processing Fee', price: '43.76'),
+                CustomPaymentRow(
+                  title: AppStrings.processingFee,
+                  price: '43.76',
+                ),
                 SizedBox(height: 30.h),
                 CustomPaymentRow(
-                  title: 'Total Amount',
-                  price: 'EGP 1201.7',
+                  title: AppStrings.totalAmount,
+                  price: AppStrings.totalAmountValue,
                   style1: AppTextstyles.font16alreadyTextW600.copyWith(
                     color: Color(0xff0A0A0A),
                     fontSize: 18,
@@ -59,7 +63,7 @@ class PaymentDetailsScreen extends StatelessWidget {
                 ),
                 SizedBox(height: 12.h),
                 Text(
-                  'Payment Method',
+                  AppStrings.paymentMethod,
                   style: AppTextstyles.font16alreadyTextW600.copyWith(
                     color: Color(0xff0A0A0A),
                     fontSize: 18,
@@ -87,7 +91,7 @@ class PaymentDetailsScreen extends StatelessWidget {
                         Icon(FontAwesomeIcons.apple, size: 24.h),
                         SizedBox(width: 3.w),
                         Text(
-                          'Apple Pay',
+                          AppStrings.applePay,
                           style: AppTextstyles.font16alreadyTextW600.copyWith(
                             color: const Color(0xff0A0A0A),
                             fontWeight: FontWeight.w400,
@@ -102,7 +106,7 @@ class PaymentDetailsScreen extends StatelessWidget {
                 SizedBox(height: 6.h),
                 CustomButton(
                   width: double.infinity,
-                  text: 'Pay Now',
+                  text: AppStrings.payNow,
                   color: AppColors.mainGreen,
                   style: AppTextstyles.font16alreadyTextW600.copyWith(
                     color: Colors.white,
@@ -113,7 +117,7 @@ class PaymentDetailsScreen extends StatelessWidget {
                 ),
                 SizedBox(height: 6.h),
                 Text(
-                  'By clicking Pay Now, you agree to our Terms of Service and  Membership Rules ',
+                  AppStrings.paymentAgreement,
                   textAlign: TextAlign.center,
                   style: AppTextstyles.font12mainGreenW400.copyWith(
                     color: Color(0xff6A7282),
