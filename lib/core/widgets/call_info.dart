@@ -1,16 +1,24 @@
 import 'package:club_app/core/utils/app_colors.dart';
-import 'package:club_app/core/utils/app_strings.dart';
 import 'package:club_app/core/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class CallInfo extends StatelessWidget {
-  const CallInfo({super.key});
-
+  const CallInfo({
+    super.key,
+    required this.lefttitle,
+    required this.leftIcon,
+    required this.rightTitle,
+    required this.rightIcon,
+  });
+  final String lefttitle;
+  final IconData leftIcon;
+  final String rightTitle;
+  final IconData rightIcon;
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Container(
           width: 143.w,
@@ -23,10 +31,10 @@ class CallInfo extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(FontAwesomeIcons.whatsapp, color: AppColors.mainGreen),
+                Icon(leftIcon, color: AppColors.mainGreen),
                 SizedBox(width: 10.w),
                 Text(
-                  AppStrings.whatsapp,
+                  lefttitle,
                   style: AppTextstyles.font20mainGreenW600.copyWith(
                     fontSize: 18,
                   ),
@@ -46,10 +54,10 @@ class CallInfo extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Icon(FontAwesomeIcons.phone, color: AppColors.mainGreen),
+              Icon(rightIcon, color: AppColors.mainGreen),
               SizedBox(width: 10.w),
               Text(
-                AppStrings.callNow,
+                rightTitle,
                 style: AppTextstyles.font20mainGreenW600.copyWith(fontSize: 18),
               ),
             ],

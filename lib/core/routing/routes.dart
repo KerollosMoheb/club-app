@@ -22,4 +22,13 @@ class Routes {
   static const String verificationScreen = '/verificationScreen';
   static const String paymentDetailsScreen = '/paymentDetailsScreen';
   static const String matchDetailsScreen = '/matchDetailsScreen';
+  static const String moreScreen = '/moreScreen';
+  static const String profileScreen = '/profileScreen';
+  static const String myReservationsScreen = '/myReservationsScreen';
+  static const String complaintScreen = '/complaintScreen';
+  static const String directorsScreen = '/directorsScreen';
+  static const String privacyAndPolicyScreen = '/privacyAndPolicyScreen';
+  static const String aboutUsScreen = '/aboutUsScreen';
+  static const String helpAndSupportScreen = '/helpAndSupportScreen';
+  static const String chatWithAlexScreen = '/chatWithAlexScreen';
 }
