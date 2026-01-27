@@ -2,6 +2,7 @@ import 'package:club_app/core/utils/app_colors.dart';
 import 'package:club_app/feature/home/data/nav_item.dart';
 import 'package:club_app/feature/home/presentation/views/home_screen.dart';
 import 'package:club_app/feature/matches/presentation/views/matches_screen.dart';
+import 'package:club_app/feature/more/presentation/views/more_screen.dart';
 import 'package:club_app/feature/services/presentation/services_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -20,8 +21,7 @@ class _MainScreenState extends State<MainScreen> {
     HomeScreen(),
     ServicesScreen(),
     MatchesScreen(),
-    //test
-    const Center(child: Text("More Screen")),
+    MoreScreen(),
   ];
 
   @override

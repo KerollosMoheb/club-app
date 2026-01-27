@@ -2,9 +2,9 @@ import 'package:club_app/core/helper/extentions.dart';
 import 'package:club_app/core/utils/app_colors.dart';
 import 'package:club_app/core/utils/app_strings.dart';
 import 'package:club_app/core/utils/app_textstyles.dart';
+import 'package:club_app/core/widgets/call_info.dart';
 import 'package:club_app/core/widgets/custom_app_bar.dart';
 import 'package:club_app/core/widgets/custom_button.dart';
-import 'package:club_app/feature/medical_clinics/presentation/widgets/call_info.dart';
 import 'package:club_app/feature/medical_clinics/presentation/widgets/days_doctor_schedual.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -56,7 +56,12 @@ class DoctorScreen extends StatelessWidget {
                     SizedBox(height: 18.h),
                     DaysDoctorSchedual(),
                     SizedBox(height: 30.h),
-                    CallInfo(),
+                    CallInfo(
+                      lefttitle: AppStrings.whatsapp,
+                      leftIcon: FontAwesomeIcons.whatsapp,
+                      rightTitle: AppStrings.call,
+                      rightIcon: FontAwesomeIcons.phone,
+                    ),
                     SizedBox(height: 20.h),
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,

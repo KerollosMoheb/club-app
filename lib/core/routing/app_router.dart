@@ -12,6 +12,15 @@ import 'package:club_app/feature/home/presentation/views/notification_screen.dar
 import 'package:club_app/feature/matches/presentation/views/match_details_screen.dart';
 import 'package:club_app/feature/medical_clinics/presentation/views/doctor_screen.dart';
 import 'package:club_app/feature/medical_clinics/presentation/views/medical_clinics_screen.dart';
+import 'package:club_app/feature/more/presentation/views/about_us_screen.dart';
+import 'package:club_app/feature/more/presentation/views/chat_with_alex_screen.dart';
+import 'package:club_app/feature/more/presentation/views/complaint_screen.dart';
+import 'package:club_app/feature/more/presentation/views/directors_screen.dart';
+import 'package:club_app/feature/more/presentation/views/help_and_support_screen.dart';
+import 'package:club_app/feature/more/presentation/views/more_screen.dart';
+import 'package:club_app/feature/more/presentation/views/my_reservations_screen.dart';
+import 'package:club_app/feature/more/presentation/views/privacy_and_policy_screen.dart';
+import 'package:club_app/feature/more/presentation/views/profile_screen.dart';
 import 'package:club_app/feature/renew/presentation/views/payment_details_screen.dart';
 import 'package:club_app/feature/renew/presentation/views/renew_screen.dart';
 import 'package:club_app/feature/renew/presentation/views/upload_document_screen.dart';
@@ -113,6 +122,32 @@ class AppRouter {
       case Routes.matchDetailsScreen:
         return MaterialPageRoute(
           builder: (context) => const MatchDetailsScreen(),
+        );
+      case Routes.moreScreen:
+        return MaterialPageRoute(builder: (context) => const MoreScreen());
+      case Routes.profileScreen:
+        return MaterialPageRoute(builder: (context) => const ProfileScreen());
+      case Routes.myReservationsScreen:
+        return MaterialPageRoute(
+          builder: (context) => const MyReservationsScreen(),
+        );
+      case Routes.complaintScreen:
+        return MaterialPageRoute(builder: (context) => const ComplaintScreen());
+      case Routes.directorsScreen:
+        return MaterialPageRoute(builder: (context) => const DirectorsScreen());
+      case Routes.privacyAndPolicyScreen:
+        return MaterialPageRoute(
+          builder: (context) => const PrivacyAndPolicyScreen(),
+        );
+      case Routes.aboutUsScreen:
+        return MaterialPageRoute(builder: (context) => const AboutUsScreen());
+      case Routes.helpAndSupportScreen:
+        return MaterialPageRoute(
+          builder: (context) => const HelpAndSupportScreen(),
+        );
+      case Routes.chatWithAlexScreen:
+        return MaterialPageRoute(
+          builder: (context) => const ChatWithAlexScreen(),
         );
       default:
         return MaterialPageRoute(

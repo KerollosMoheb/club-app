@@ -180,4 +180,32 @@ class Assets {
   /// Assets for imagesMokhtabar
   /// assets/images/mokhtabar.png
   static const String imagesMokhtabar = "assets/images/mokhtabar.png";
+
+  /// Assets for imagesBot
+  /// assets/images/bot.png
+  static const String imagesBot = "assets/images/bot.png";
+
+  /// Assets for imagesDavidChen
+  /// assets/images/DavidChen.png
+  static const String imagesDavidChen = "assets/images/DavidChen.png";
+
+  /// Assets for imagesElenaRodriguez
+  /// assets/images/ElenaRodriguez.png
+  static const String imagesElenaRodriguez = "assets/images/ElenaRodriguez.png";
+
+  /// Assets for imagesGirl
+  /// assets/images/girl.png
+  static const String imagesGirl = "assets/images/girl.png";
+
+  /// Assets for imagesMarcusSterling
+  /// assets/images/MarcusSterling.png
+  static const String imagesMarcusSterling = "assets/images/MarcusSterling.png";
+
+  /// Assets for imagesRobertTaylor
+  /// assets/images/RobertTaylor.png
+  static const String imagesRobertTaylor = "assets/images/RobertTaylor.png";
+
+  /// Assets for imagesSarahJenkins
+  /// assets/images/SarahJenkins.png
+  static const String imagesSarahJenkins = "assets/images/SarahJenkins.png";
 }
