@@ -38,14 +38,14 @@ class ProfileInfoTile extends StatelessWidget {
                   Text(
                     title,
                     style: AppTextstyles.font16alreadyTextW600.copyWith(
-                      color: Colors.black,
+                      color: AppColors.black,
                     ),
                   ),
                   SizedBox(height: 5.h),
                   Text(
                     value,
                     style: AppTextstyles.font14darkerGreyW400.copyWith(
-                      color: Colors.black,
+                      color: AppColors.black,
                       fontSize: 16.sp,
                     ),
                   ),

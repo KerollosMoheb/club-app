@@ -31,7 +31,7 @@ class _MainScreenState extends State<MainScreen> {
       bottomNavigationBar: Container(
         padding: EdgeInsets.symmetric(vertical: 12.h),
         decoration: BoxDecoration(
-          color: AppColors.deepGrey,
+          color: AppColors.surfaceGrey,
           borderRadius: BorderRadius.vertical(top: Radius.circular(10.sp)),
         ),
         child: SafeArea(
@@ -68,7 +68,7 @@ class _MainScreenState extends State<MainScreen> {
               style: TextStyle(
                 fontSize: 14,
                 fontWeight: FontWeight.w500,
-                color: isActive ? AppColors.mainGreen : Colors.black,
+                color: isActive ? AppColors.mainGreen : AppColors.black,
               ),
             ),
           ],

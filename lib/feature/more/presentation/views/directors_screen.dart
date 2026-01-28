@@ -37,7 +37,6 @@ class DirectorsScreen extends StatelessWidget {
     ];
 
     return Scaffold(
-      backgroundColor: Colors.white,
       appBar: customAppBar(() => context.pop(), AppStrings.boardOfDirectors),
       body: SingleChildScrollView(
         padding: EdgeInsets.symmetric(horizontal: 24.w),

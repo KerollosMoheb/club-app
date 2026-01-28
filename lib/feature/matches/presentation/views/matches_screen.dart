@@ -1,3 +1,4 @@
+import 'package:club_app/core/utils/app_colors.dart';
 import 'package:club_app/core/utils/app_images.dart';
 import 'package:club_app/core/utils/app_strings.dart';
 import 'package:club_app/core/utils/app_textstyles.dart';
@@ -30,7 +31,7 @@ class _MatchesScreenState extends State<MatchesScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: AppColors.white,
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
@@ -172,7 +173,7 @@ class _MatchesScreenState extends State<MatchesScreen> {
           Text(
             leagueName,
             style: AppTextstyles.font15alreadyTextW500.copyWith(
-              color: Color(0xff333232),
+              color: AppColors.darkerGrey,
               fontSize: 12,
             ),
           ),

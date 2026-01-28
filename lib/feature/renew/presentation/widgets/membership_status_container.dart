@@ -14,7 +14,7 @@ class MembershipStatusContainer extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 38.w),
       child: Container(
         decoration: BoxDecoration(
-          color: AppColors.deepGrey,
+          color: AppColors.surfaceGrey,
           borderRadius: BorderRadius.circular(20.r),
           border: Border.all(color: AppColors.mainGreen),
         ),
@@ -31,9 +31,11 @@ class MembershipStatusContainer extends StatelessWidget {
                     color: AppColors.mainGreen,
                   ),
                   SizedBox(width: 12.w),
-                  Text(
-                    AppStrings.currentMembershipStatus,
-                    style: AppTextstyles.font14blackW500,
+                  Expanded(
+                    child: Text(
+                      AppStrings.currentMembershipStatus,
+                      style: AppTextstyles.font14blackW500,
+                    ),
                   ),
                 ],
               ),

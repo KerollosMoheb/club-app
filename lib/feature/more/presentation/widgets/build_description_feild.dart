@@ -9,7 +9,7 @@ Widget buildDescriptionField() {
     height: 150.h,
     padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 12.h),
     decoration: BoxDecoration(
-      color: AppColors.deepGrey,
+      color: AppColors.surfaceGrey,
       borderRadius: BorderRadius.circular(15.r),
     ),
     child: TextField(

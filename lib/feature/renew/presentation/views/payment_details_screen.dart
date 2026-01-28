@@ -34,7 +34,7 @@ class PaymentDetailsScreen extends StatelessWidget {
                 Text(
                   AppStrings.orderSummary,
                   style: AppTextstyles.font16alreadyTextW600.copyWith(
-                    color: Color(0xff0A0A0A),
+                    color: AppColors.black,
                     fontSize: 18,
                   ),
                 ),
@@ -53,7 +53,7 @@ class PaymentDetailsScreen extends StatelessWidget {
                   title: AppStrings.totalAmount,
                   price: AppStrings.totalAmountValue,
                   style1: AppTextstyles.font16alreadyTextW600.copyWith(
-                    color: Color(0xff0A0A0A),
+                    color: AppColors.black,
                     fontSize: 18,
                   ),
                   style2: AppTextstyles.font16alreadyTextW600.copyWith(
@@ -65,7 +65,7 @@ class PaymentDetailsScreen extends StatelessWidget {
                 Text(
                   AppStrings.paymentMethod,
                   style: AppTextstyles.font16alreadyTextW600.copyWith(
-                    color: Color(0xff0A0A0A),
+                    color: AppColors.black,
                     fontSize: 18,
                   ),
                 ),
@@ -77,9 +77,7 @@ class PaymentDetailsScreen extends StatelessWidget {
                   height: 59.h,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20.r),
-                    border: Border.all(
-                      color: const Color(0xff0A0A0A).withOpacity(0.2),
-                    ),
+                    border: Border.all(color: AppColors.black.withOpacity(0.2)),
                   ),
                   child: Padding(
                     padding: EdgeInsets.symmetric(
@@ -93,7 +91,7 @@ class PaymentDetailsScreen extends StatelessWidget {
                         Text(
                           AppStrings.applePay,
                           style: AppTextstyles.font16alreadyTextW600.copyWith(
-                            color: const Color(0xff0A0A0A),
+                            color: AppColors.black,
                             fontWeight: FontWeight.w400,
                           ),
                         ),
@@ -109,7 +107,7 @@ class PaymentDetailsScreen extends StatelessWidget {
                   text: AppStrings.payNow,
                   color: AppColors.mainGreen,
                   style: AppTextstyles.font16alreadyTextW600.copyWith(
-                    color: Colors.white,
+                    color: AppColors.white,
                   ),
                   onTap: () {
                     showSuccessDialog(context);
@@ -120,7 +118,8 @@ class PaymentDetailsScreen extends StatelessWidget {
                   AppStrings.paymentAgreement,
                   textAlign: TextAlign.center,
                   style: AppTextstyles.font12mainGreenW400.copyWith(
-                    color: Color(0xff6A7282),
+                    color: AppColors.inkBlack3,
+                    decoration: TextDecoration.underline,
                   ),
                 ),
                 SizedBox(height: 6.h),

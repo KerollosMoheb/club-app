@@ -21,7 +21,7 @@ class CallInfo extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Container(
-          width: 143.w,
+          width: 145.w,
           height: 53.h,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),

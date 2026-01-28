@@ -6,7 +6,7 @@ import 'package:club_app/core/utils/app_strings.dart';
 import 'package:club_app/core/utils/app_textstyles.dart';
 import 'package:club_app/core/widgets/custom_app_bar.dart';
 import 'package:club_app/core/widgets/custom_button.dart';
-import 'package:club_app/feature/renew/presentation/views/pending_verification_container.dart';
+import 'package:club_app/feature/renew/presentation/widgets/pending_verification_container.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -31,6 +31,7 @@ class VerificationScreen extends StatelessWidget {
                 SizedBox(height: 40.h),
                 Text(
                   AppStrings.applicationUnderReview,
+                  textAlign: TextAlign.center,
                   style: AppTextstyles.font14blackW600.copyWith(fontSize: 24),
                 ),
                 SizedBox(height: 20.h),
@@ -61,6 +62,7 @@ class VerificationScreen extends StatelessWidget {
                     context.pushNamed(Routes.homeScreen);
                   },
                 ),
+                SizedBox(height: 20.h),
               ],
             ),
           ),

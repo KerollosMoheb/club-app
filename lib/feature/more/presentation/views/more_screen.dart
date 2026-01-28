@@ -49,7 +49,7 @@ class MoreScreen extends StatelessWidget {
                     Text(
                       'English',
                       style: AppTextstyles.font14blackW500.copyWith(
-                        color: Color(0xffCFCFCF),
+                        color: AppColors.lighterGrey,
                       ),
                     ),
                     SizedBox(width: 5.w),

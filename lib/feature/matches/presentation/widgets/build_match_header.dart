@@ -1,3 +1,4 @@
+import 'package:club_app/core/utils/app_colors.dart';
 import 'package:club_app/core/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -62,7 +63,7 @@ Widget _buildTeamColumn(String name, String logo) {
       if (logo.isNotEmpty)
         Image.asset(logo, width: 60.w, height: 60.h)
       else
-        Icon(Icons.shield, size: 60.sp, color: Colors.green),
+        Icon(Icons.shield, size: 60.sp, color: AppColors.mainGreen),
       SizedBox(height: 8.h),
     ],
   );

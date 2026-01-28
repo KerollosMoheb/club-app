@@ -22,7 +22,7 @@ class CustomDocumentContainer extends StatelessWidget {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 24.w, vertical: 24.h),
       decoration: BoxDecoration(
-        color: AppColors.deepGrey,
+        color: AppColors.surfaceGrey,
         borderRadius: BorderRadius.circular(20.r),
         border: Border.all(color: AppColors.mainGreen),
       ),
@@ -73,11 +73,11 @@ class CustomDocumentContainer extends StatelessWidget {
             Text(
               AppStrings.upload,
               style: AppTextstyles.font14blackW600.copyWith(
-                color: Colors.white,
+                color: AppColors.white,
               ),
             ),
             SizedBox(width: 8.w),
-            Icon(FontAwesomeIcons.upload, size: 18.sp, color: Colors.white),
+            Icon(FontAwesomeIcons.upload, size: 18.sp, color: AppColors.white),
           ],
         ),
       ),

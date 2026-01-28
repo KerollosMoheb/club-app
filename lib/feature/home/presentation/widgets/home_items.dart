@@ -19,7 +19,7 @@ class HomeItems extends StatelessWidget {
       onTap: onTap,
       child: Container(
         decoration: BoxDecoration(
-          color: AppColors.deepGrey,
+          color: AppColors.surfaceGrey,
           borderRadius: BorderRadius.circular(20.r),
         ),
         child: Column(
@@ -30,7 +30,7 @@ class HomeItems extends StatelessWidget {
               height: 52.h,
               margin: EdgeInsets.only(top: 12.h),
               decoration: BoxDecoration(
-                color: AppColors.brightGreen,
+                color: AppColors.lightGreen,
                 borderRadius: BorderRadius.circular(10.r),
               ),
               child: Icon(icon, color: AppColors.mainGreen, size: 24.sp),
@@ -43,7 +43,7 @@ class HomeItems extends StatelessWidget {
                     text,
                     textAlign: TextAlign.center,
                     style: AppTextstyles.font14blackW500.copyWith(
-                      color: AppColors.semiLightBlack,
+                      color: AppColors.black,
                     ),
                   ),
                 ),

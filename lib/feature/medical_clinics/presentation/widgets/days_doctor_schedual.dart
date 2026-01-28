@@ -13,7 +13,7 @@ class DaysDoctorSchedual extends StatelessWidget {
       children: [
         Container(
           decoration: BoxDecoration(
-            color: AppColors.deepGrey,
+            color: AppColors.surfaceGrey,
             borderRadius: BorderRadius.circular(20.r),
           ),
           child: Padding(
@@ -30,7 +30,7 @@ class DaysDoctorSchedual extends StatelessWidget {
                     Icon(
                       FontAwesomeIcons.clock,
                       size: 17,
-                      color: Color(0xff1C1B1F),
+                      color: AppColors.inkBlack,
                     ),
                     SizedBox(width: 20.w),
                     Text('10:00 AM'),
@@ -38,7 +38,7 @@ class DaysDoctorSchedual extends StatelessWidget {
                     Icon(
                       FontAwesomeIcons.arrowRight,
                       size: 13,
-                      color: Color(0xff1C1B1F),
+                      color: AppColors.inkBlack,
                     ),
                     SizedBox(width: 10.w),
                     Text('11:00 AM'),
@@ -51,7 +51,7 @@ class DaysDoctorSchedual extends StatelessWidget {
         SizedBox(height: 10.h),
         Container(
           decoration: BoxDecoration(
-            color: AppColors.deepGrey,
+            color: AppColors.surfaceGrey,
             borderRadius: BorderRadius.circular(20.r),
           ),
           child: Padding(
@@ -68,7 +68,7 @@ class DaysDoctorSchedual extends StatelessWidget {
                     Icon(
                       FontAwesomeIcons.clock,
                       size: 17,
-                      color: Color(0xff1C1B1F),
+                      color: AppColors.inkBlack,
                     ),
                     SizedBox(width: 20.w),
                     Text('10:00 AM'),
@@ -76,7 +76,7 @@ class DaysDoctorSchedual extends StatelessWidget {
                     Icon(
                       FontAwesomeIcons.arrowRight,
                       size: 13,
-                      color: Color(0xff1C1B1F),
+                      color: AppColors.inkBlack,
                     ),
                     SizedBox(width: 10.w),
                     Text('11:00 AM'),
@@ -89,7 +89,7 @@ class DaysDoctorSchedual extends StatelessWidget {
         SizedBox(height: 10.h),
         Container(
           decoration: BoxDecoration(
-            color: AppColors.deepGrey,
+            color: AppColors.surfaceGrey,
             borderRadius: BorderRadius.circular(20.r),
           ),
           child: Padding(
@@ -106,7 +106,7 @@ class DaysDoctorSchedual extends StatelessWidget {
                     Icon(
                       FontAwesomeIcons.clock,
                       size: 17,
-                      color: Color(0xff1C1B1F),
+                      color: AppColors.inkBlack,
                     ),
                     SizedBox(width: 20.w),
                     Text('3:00 AM'),
@@ -114,7 +114,7 @@ class DaysDoctorSchedual extends StatelessWidget {
                     Icon(
                       FontAwesomeIcons.arrowRight,
                       size: 13,
-                      color: Color(0xff1C1B1F),
+                      color: AppColors.inkBlack,
                     ),
                     SizedBox(width: 10.w),
                     Text('11:00 AM'),

@@ -54,7 +54,7 @@ class LiveMatchCard extends StatelessWidget {
         margin: EdgeInsets.symmetric(horizontal: 8.w),
         padding: EdgeInsets.all(16.w),
         decoration: BoxDecoration(
-          color: AppColors.deepGrey,
+          color: AppColors.surfaceGrey,
           borderRadius: BorderRadius.circular(20.r),
         ),
         child: Column(

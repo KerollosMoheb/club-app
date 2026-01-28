@@ -22,7 +22,7 @@ class RestaurantCafeInfo extends StatelessWidget {
       onTap: onTap,
       child: Container(
         decoration: BoxDecoration(
-          color: AppColors.deepGrey,
+          color: AppColors.surfaceGrey,
           borderRadius: BorderRadius.circular(20.r),
         ),
         child: Padding(
@@ -41,7 +41,7 @@ class RestaurantCafeInfo extends StatelessWidget {
                     Text(
                       name,
                       style: AppTextstyles.font15alreadyTextW500.copyWith(
-                        color: Colors.black,
+                        color: AppColors.black,
                       ),
                     ),
                     SizedBox(height: 5.h),

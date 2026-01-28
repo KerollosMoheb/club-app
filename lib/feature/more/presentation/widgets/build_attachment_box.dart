@@ -10,7 +10,7 @@ Widget buildAttachmentBox() {
     height: 160.h,
     width: double.infinity,
     decoration: BoxDecoration(
-      color: AppColors.deepGrey,
+      color: AppColors.surfaceGrey,
       borderRadius: BorderRadius.circular(15.r),
       border: Border.all(
         color: AppColors.mainGreen.withOpacity(0.5),

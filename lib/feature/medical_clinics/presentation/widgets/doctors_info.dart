@@ -25,7 +25,7 @@ class DoctorsInfo extends StatelessWidget {
       onTap: onTap,
       child: Container(
         decoration: BoxDecoration(
-          color: AppColors.deepGrey,
+          color: AppColors.surfaceGrey,
           borderRadius: BorderRadius.circular(20.r),
         ),
         child: Padding(
@@ -44,7 +44,7 @@ class DoctorsInfo extends StatelessWidget {
                     Text(
                       name,
                       style: AppTextstyles.font14mainGreenW500.copyWith(
-                        color: Colors.black,
+                        color: AppColors.black,
                       ),
                     ),
                     Text(

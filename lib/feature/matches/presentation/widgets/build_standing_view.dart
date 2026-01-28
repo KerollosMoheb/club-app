@@ -94,7 +94,7 @@ Widget _buildStandingRow(
   bool highlight = false,
 }) {
   return Container(
-    color: highlight ? AppColors.brightGreen : Colors.transparent,
+    color: highlight ? AppColors.lightGreen : Colors.transparent,
     padding: EdgeInsets.symmetric(vertical: 12.h),
     child: Row(
       children: [

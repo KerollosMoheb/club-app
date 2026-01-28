@@ -2,6 +2,7 @@ import 'package:club_app/core/utils/app_strings.dart';
 import 'package:club_app/core/utils/app_textstyles.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ForgotPassword extends StatelessWidget {
   const ForgotPassword({super.key});
@@ -11,7 +12,7 @@ class ForgotPassword extends StatelessWidget {
     return Align(
       alignment: Alignment.centerLeft,
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 65),
+        padding: EdgeInsets.symmetric(horizontal: 50.w),
         child: RichText(
           textAlign: TextAlign.center,
           text: TextSpan(
@@ -21,7 +22,7 @@ class ForgotPassword extends StatelessWidget {
                 style: AppTextstyles.font15alreadyTextW500,
                 recognizer: TapGestureRecognizer()
                   ..onTap = () {
-                   // context.pushReplacementNamed(Routes.forgetPasswordScreen);
+                    // context.pushReplacementNamed(Routes.forgetPasswordScreen);
                   },
               ),
             ],

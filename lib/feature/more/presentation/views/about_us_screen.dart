@@ -11,7 +11,6 @@ class AboutUsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
       appBar: customAppBar(() {
         context.pop();
       }, AppStrings.aboutUs),
