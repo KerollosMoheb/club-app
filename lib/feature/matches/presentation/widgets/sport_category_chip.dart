@@ -29,7 +29,7 @@ class SportCategoryChip extends StatelessWidget {
         ),
         margin: EdgeInsets.symmetric(horizontal: 4.w),
         decoration: BoxDecoration(
-          color: isSelected ? AppColors.lightGreen : AppColors.brightGreen,
+          color: isSelected ? AppColors.mainGreen : AppColors.lightGreen,
           borderRadius: BorderRadius.circular(30.r),
         ),
         child: Row(
@@ -37,7 +37,7 @@ class SportCategoryChip extends StatelessWidget {
           children: [
             Icon(
               icon,
-              color: isSelected ? Colors.white : AppColors.lightGreen,
+              color: isSelected ? AppColors.white : AppColors.mainGreen,
               size: 20.sp,
             ),
             if (isSelected) ...[
@@ -45,7 +45,7 @@ class SportCategoryChip extends StatelessWidget {
               Text(
                 label,
                 style: AppTextstyles.font14mainGreenW500.copyWith(
-                  color: Colors.white,
+                  color: AppColors.white,
                   fontWeight: FontWeight.w700,
                 ),
               ),

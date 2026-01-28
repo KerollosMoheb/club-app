@@ -15,7 +15,7 @@ class FoodCard extends StatelessWidget {
       margin: EdgeInsets.only(bottom: 12.h),
       padding: EdgeInsets.all(10.w),
       decoration: BoxDecoration(
-        color: AppColors.deepGrey,
+        color: AppColors.surfaceGrey,
         borderRadius: BorderRadius.circular(20.r),
       ),
       child: Row(

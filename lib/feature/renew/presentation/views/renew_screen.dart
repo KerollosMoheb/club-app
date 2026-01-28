@@ -27,7 +27,7 @@ class RenewScreen extends StatelessWidget {
               AppStrings.annualMembershipRenewal,
               textAlign: TextAlign.center,
               style: AppTextstyles.font20whiteW600.copyWith(
-                color: Colors.black,
+                color: AppColors.black,
               ),
             ),
             SizedBox(height: 11.h),

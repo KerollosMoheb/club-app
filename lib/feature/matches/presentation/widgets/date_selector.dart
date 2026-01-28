@@ -28,8 +28,7 @@ class DateSelector extends StatelessWidget {
               color: AppColors.mainGreen,
               size: 16.sp,
             ),
-            onPressed: () {
-            },
+            onPressed: () {},
           ),
           Expanded(
             child: ListView.builder(
@@ -51,7 +50,7 @@ class DateSelector extends StatelessWidget {
                         Text(
                           _getWeekday(date),
                           style: AppTextstyles.font14blackW500.copyWith(
-                            color: isSelected ? Colors.black : Colors.grey,
+                            color: isSelected ? AppColors.black : Colors.grey,
                             fontWeight: isSelected
                                 ? FontWeight.bold
                                 : FontWeight.normal,
@@ -63,7 +62,7 @@ class DateSelector extends StatelessWidget {
                               ? "Today"
                               : "${date.day} ${_getMonth(date)}",
                           style: AppTextstyles.font14blackW500.copyWith(
-                            color: isSelected ? Colors.black : Colors.grey,
+                            color: isSelected ? AppColors.black : Colors.grey,
                             fontWeight: isSelected
                                 ? FontWeight.bold
                                 : FontWeight.normal,
@@ -90,8 +89,7 @@ class DateSelector extends StatelessWidget {
               color: AppColors.mainGreen,
               size: 16.sp,
             ),
-            onPressed: () {
-            },
+            onPressed: () {},
           ),
         ],
       ),

@@ -27,7 +27,7 @@ class HelpAndSupportScreen extends StatelessWidget {
             Text(
               AppStrings.howCanWeHelp,
               style: AppTextstyles.font20whiteW700.copyWith(
-                color: Colors.black,
+                color: AppColors.black,
               ),
             ),
             SizedBox(height: 30.h),
@@ -37,7 +37,7 @@ class HelpAndSupportScreen extends StatelessWidget {
                 Text(
                   AppStrings.topQuestions,
                   style: AppTextstyles.font20whiteW700.copyWith(
-                    color: Colors.black,
+                    color: AppColors.black,
                   ),
                 ),
                 TextButton(
@@ -59,7 +59,7 @@ class HelpAndSupportScreen extends StatelessWidget {
             Text(
               AppStrings.stillNeedHelp,
               style: AppTextstyles.font20whiteW700.copyWith(
-                color: Colors.black,
+                color: AppColors.black,
               ),
             ),
             SizedBox(height: 20.h),
@@ -88,7 +88,7 @@ class HelpAndSupportScreen extends StatelessWidget {
     return Container(
       margin: EdgeInsets.only(bottom: 10.h),
       decoration: BoxDecoration(
-        border: Border(bottom: BorderSide(color: AppColors.deepGrey)),
+        border: Border(bottom: BorderSide(color: AppColors.surfaceGrey)),
       ),
       child: ExpansionTile(
         leading: Icon(icon, color: AppColors.mainGreen, size: 26),

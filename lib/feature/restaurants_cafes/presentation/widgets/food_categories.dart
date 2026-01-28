@@ -30,14 +30,14 @@ class FoodCategories extends StatelessWidget {
                   borderRadius: BorderRadius.circular(40),
                   color: isSelected
                       ? AppColors.mainGreen
-                      : AppColors.brightGreen,
+                      : AppColors.lightGreen,
                 ),
                 padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 5.h),
                 child: Text(
                   categories[index],
                   style: AppTextstyles.font14mainGreenW500.copyWith(
                     fontWeight: FontWeight.w400,
-                    color: isSelected ? Colors.white : AppColors.mainGreen,
+                    color: isSelected ? AppColors.white : AppColors.mainGreen,
                   ),
                 ),
               ),

@@ -25,7 +25,7 @@ class ReservationContainer extends StatelessWidget {
     return Container(
       margin: EdgeInsets.symmetric(horizontal: 16.w),
       decoration: BoxDecoration(
-        color: AppColors.deepGrey,
+        color: AppColors.surfaceGrey,
         borderRadius: BorderRadius.circular(20.r),
       ),
       child: Padding(

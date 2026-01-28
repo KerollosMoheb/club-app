@@ -15,7 +15,7 @@ class CategorySize extends StatelessWidget {
       children: [
         _buildBadge(category, AppColors.mainGreen),
         SizedBox(width: 30.w),
-        _buildBadge(AppStrings.almostFull, const Color(0xffFF0000)),
+        _buildBadge(AppStrings.almostFull, AppColors.errorRed),
       ],
     );
   }
@@ -25,7 +25,7 @@ class CategorySize extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 6.h),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20.r),
-        color: AppColors.deepGrey,
+        color: AppColors.surfaceGrey,
         border: Border.all(color: color),
       ),
       child: Text(

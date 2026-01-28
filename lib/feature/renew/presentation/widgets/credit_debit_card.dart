@@ -14,7 +14,7 @@ class CreditDebitCard extends StatelessWidget {
       width: 326.w,
       padding: EdgeInsets.symmetric(horizontal: 15.w, vertical: 10.h),
       decoration: BoxDecoration(
-        color: AppColors.deepGrey,
+        color: AppColors.surfaceGrey,
         borderRadius: BorderRadius.circular(20.r),
         border: Border.all(color: AppColors.mainGreen),
       ),
@@ -90,7 +90,7 @@ class CreditDebitCard extends StatelessWidget {
       hintText: hint,
       contentPadding: EdgeInsets.symmetric(horizontal: 15.w, vertical: 12.h),
       hintStyle: AppTextstyles.font16alreadyTextW600.copyWith(
-        color: const Color(0xff0A0A0A).withOpacity(0.2),
+        color: AppColors.black.withOpacity(0.2),
         fontWeight: FontWeight.w400,
       ),
       enabledBorder: buildBorder(),
@@ -101,7 +101,7 @@ class CreditDebitCard extends StatelessWidget {
   OutlineInputBorder buildBorder() {
     return OutlineInputBorder(
       borderRadius: BorderRadius.circular(20.r),
-      borderSide: BorderSide(color: const Color(0xff0A0A0A).withOpacity(0.2)),
+      borderSide: BorderSide(color: AppColors.black.withOpacity(0.2)),
     );
   }
 }

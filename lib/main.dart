@@ -1,5 +1,6 @@
 import 'package:club_app/core/routing/app_router.dart';
 import 'package:club_app/core/routing/routes.dart';
+import 'package:club_app/core/utils/app_colors.dart';
 import 'package:club_app/core/utils/app_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -19,10 +20,10 @@ class ClubApp extends StatelessWidget {
       child: MaterialApp(
         theme: ThemeData(
           fontFamily: AppFonts.primary,
-          scaffoldBackgroundColor: Colors.white,
+          scaffoldBackgroundColor: AppColors.white,
         ),
         debugShowCheckedModeBanner: false,
-        initialRoute: Routes.mainScreen,
+        initialRoute: Routes.splashScreen,
         onGenerateRoute: appRouter.generateRoute,
       ),
     );

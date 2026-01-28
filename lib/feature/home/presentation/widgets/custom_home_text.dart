@@ -1,3 +1,4 @@
+import 'package:club_app/core/utils/app_colors.dart';
 import 'package:club_app/core/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
 
@@ -23,7 +24,9 @@ class CustomRowText extends StatelessWidget {
           firstText,
           style:
               style1 ??
-              AppTextstyles.font16alreadyTextW600.copyWith(color: Colors.black),
+              AppTextstyles.font16alreadyTextW600.copyWith(
+                color: AppColors.black,
+              ),
         ),
         Spacer(),
         GestureDetector(

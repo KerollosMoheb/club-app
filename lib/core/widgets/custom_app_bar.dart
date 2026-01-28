@@ -8,7 +8,7 @@ AppBar customAppBar(void Function()? onPressed, String? text) {
     toolbarHeight: 45.0,
     surfaceTintColor: Colors.transparent,
     elevation: 0,
-    backgroundColor: Colors.white,
+    backgroundColor: AppColors.white,
     leading: IconButton(
       onPressed: onPressed,
       icon: Icon(FontAwesomeIcons.chevronLeft, color: AppColors.mainGreen),

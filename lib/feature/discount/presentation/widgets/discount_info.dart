@@ -14,7 +14,7 @@ class DiscountInfo extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(10.w),
       decoration: BoxDecoration(
-        color: AppColors.deepGrey,
+        color: AppColors.surfaceGrey,
         borderRadius: BorderRadius.circular(20.r),
       ),
       child: Row(
@@ -47,7 +47,7 @@ class DiscountInfo extends StatelessWidget {
           Text(
             model.name,
             style: AppTextstyles.font15alreadyTextW500.copyWith(
-              color: Colors.black,
+              color: AppColors.black,
             ),
           ),
           SizedBox(height: 4.h),

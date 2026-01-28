@@ -25,7 +25,7 @@ class SportsInfo extends StatelessWidget {
       onTap: onTap,
       child: Container(
         decoration: BoxDecoration(
-          color: AppColors.deepGrey,
+          color: AppColors.surfaceGrey,
           borderRadius: BorderRadius.circular(20.r),
         ),
         child: Padding(
@@ -44,7 +44,7 @@ class SportsInfo extends StatelessWidget {
                     Text(
                       name,
                       style: AppTextstyles.font15alreadyTextW500.copyWith(
-                        color: Colors.black,
+                        color: AppColors.black,
                       ),
                     ),
                     SizedBox(height: 18.h),

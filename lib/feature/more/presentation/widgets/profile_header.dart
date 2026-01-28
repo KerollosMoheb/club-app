@@ -26,7 +26,7 @@ class ProfileHeader extends StatelessWidget {
                 child: Container(
                   padding: EdgeInsets.all(4.r),
                   decoration: const BoxDecoration(
-                    color: AppColors.brightGreen,
+                    color: AppColors.lightGreen,
                     shape: BoxShape.circle,
                   ),
                   child: Icon(
@@ -42,7 +42,7 @@ class ProfileHeader extends StatelessWidget {
         Text(
           AppStrings.heba,
           style: AppTextstyles.font20whiteW600.copyWith(
-            color: const Color(0xff181D27),
+            color: AppColors.inkBlack2,
           ),
         ),
         SizedBox(height: 5.h),
@@ -55,7 +55,7 @@ class ProfileHeader extends StatelessWidget {
           child: Text(
             '77421',
             style: AppTextstyles.font16darkGreyW600.copyWith(
-              color: Colors.white,
+              color: AppColors.white,
             ),
           ),
         ),

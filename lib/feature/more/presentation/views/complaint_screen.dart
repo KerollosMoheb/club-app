@@ -24,13 +24,11 @@ class ComplaintScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Align(
-              alignment: Alignment.center,
-              child: Text(
-                AppStrings.helpUsImprove,
-                style: AppTextstyles.font20whiteW600.copyWith(
-                  color: Colors.black,
-                ),
+            Text(
+              AppStrings.helpUsImprove,
+              textAlign: TextAlign.center,
+              style: AppTextstyles.font20whiteW600.copyWith(
+                color: AppColors.black,
               ),
             ),
             SizedBox(height: 10.h),

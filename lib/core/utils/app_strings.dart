@@ -158,7 +158,7 @@ class AppStrings {
       'Abu Auf Date Spread Cinnamon - 230 Gm';
   static const String paymentDetails = 'Payment Details';
   static const String orderSummary = 'Order Summary';
-  static const String premiumAnnualMembership = 'Premium Annual Membership';
+  static const String premiumAnnualMembership = 'Premium Annual\n Membership';
   static const String membershipPriceValue = '1157.97';
   static const String processingFee = 'Processing Fee';
   static const String totalAmount = 'Total Amount';
@@ -347,7 +347,6 @@ class AppStrings {
   static const String startLiveChat = 'Start Live Chat';
   static const String call = 'Call';
 
-
   static const String today = 'Today';
   static const String deJongScorer = "De Jong 66'";
   static const String depayScorer = "Depay 79'";
@@ -355,12 +354,14 @@ class AppStrings {
   static const String matchTime60 = '60:00';
 
   static const String chatWithAlex = 'Chat with Alex';
-  static const String chatWelcomeMessage = 'Hello! Welcome To AL ITTIHAD Sports Club Support. How Can I Help You Today?';
-  static const String chatUserQuery = 'I Need To Update My Guest Pass For This Weekend. My Brother Is Visiting!';
-  static const String chatAlexResponse = 'That\'s Exciting! I Can Certainly Help With That. Which Membership Level Are You Currently On?';
+  static const String chatWelcomeMessage =
+      'Hello! Welcome To AL ITTIHAD Sports Club Support. How Can I Help You Today?';
+  static const String chatUserQuery =
+      'I Need To Update My Guest Pass For This Weekend. My Brother Is Visiting!';
+  static const String chatAlexResponse =
+      'That\'s Exciting! I Can Certainly Help With That. Which Membership Level Are You Currently On?';
   static const String todayTime = 'Today';
   static const String messageTime1 = '10:45 AM';
   static const String messageTime2 = '10:46 AM';
   static const String messageTime3 = '10:47 AM';
-
 }

@@ -8,7 +8,7 @@ Widget buildDropdown() {
   return Container(
     padding: EdgeInsets.symmetric(horizontal: 16.w),
     decoration: BoxDecoration(
-      color: AppColors.deepGrey,
+      color: AppColors.surfaceGrey,
       borderRadius: BorderRadius.circular(12.r),
     ),
     child: DropdownButtonHideUnderline(
@@ -16,7 +16,7 @@ Widget buildDropdown() {
         isExpanded: true,
         hint: Text(
           AppStrings.selectCategory,
-          style: AppTextstyles.font14blackW500.copyWith(color: Colors.black),
+          style: AppTextstyles.font14blackW500.copyWith(color: AppColors.black),
         ),
         icon: const Icon(Icons.keyboard_arrow_down),
         items: [

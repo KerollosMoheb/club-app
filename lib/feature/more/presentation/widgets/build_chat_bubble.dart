@@ -25,8 +25,8 @@ Widget buildChatBubble(String message, String time, {required bool isAlex}) {
                 padding: EdgeInsets.all(12.w),
                 decoration: BoxDecoration(
                   color: isAlex
-                      ? const Color(0xffE5FFEA)
-                      : AppColors.brightGreen,
+                      ? AppColors.softGreenBg
+                      : AppColors.lightGreen,
                   borderRadius: BorderRadius.circular(12.r),
                 ),
                 child: Text(
@@ -41,7 +41,7 @@ Widget buildChatBubble(String message, String time, {required bool isAlex}) {
                 time,
                 style: AppTextstyles.font20whiteW600.copyWith(
                   fontSize: 7,
-                  color: AppColors.darkGrey,
+                  color: AppColors.charcolGrey,
                 ),
               ),
             ],

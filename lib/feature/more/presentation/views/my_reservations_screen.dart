@@ -35,7 +35,7 @@ class _MyReservationsScreenState extends State<MyReservationsScreen> {
               time: '10:00 AM - 1:00PM',
               status: 'Pending',
               image: Assets.imagesYoga,
-              statusColor: Color(0xffEAB308),
+              statusColor: AppColors.warningYellow,
             ),
             SizedBox(height: 30.h),
             ReservationContainer(
@@ -44,7 +44,7 @@ class _MyReservationsScreenState extends State<MyReservationsScreen> {
               time: '11:00 AM - 11:30 AM',
               status: 'Confirmed',
               image: Assets.imagesFemaleDoctor,
-              statusColor: Color(0xff13EC5B),
+              statusColor: AppColors.vibrantGreen,
             ),
           ],
         ),
@@ -57,7 +57,7 @@ class _MyReservationsScreenState extends State<MyReservationsScreen> {
       margin: EdgeInsets.symmetric(horizontal: 16.w),
       height: 50.h,
       decoration: BoxDecoration(
-        color: AppColors.brightGreen,
+        color: AppColors.lightGreen,
         borderRadius: BorderRadius.circular(20.r),
       ),
       child: Row(

@@ -77,7 +77,7 @@ class NotificationScreen extends StatelessWidget {
             Text(
               subtitle,
               style: AppTextstyles.font12mainGreenW400.copyWith(
-                color: Colors.black,
+                color: AppColors.black,
               ),
             ),
             SizedBox(height: 10.h),
@@ -104,7 +104,7 @@ class NotificationScreen extends StatelessWidget {
                       child: Text(
                         'Pay Now',
                         style: AppTextstyles.font16darkGreyW600.copyWith(
-                          color: Colors.white,
+                          color: AppColors.white,
                         ),
                       ),
                     ),

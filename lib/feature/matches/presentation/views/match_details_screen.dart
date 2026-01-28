@@ -42,7 +42,7 @@ class _MatchDetailsScreenState extends State<MatchDetailsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: AppColors.white,
       appBar: customAppBar(() => Navigator.pop(context), ""),
       body: SafeArea(
         child: SingleChildScrollView(
@@ -80,7 +80,7 @@ class _MatchDetailsScreenState extends State<MatchDetailsScreen> {
       margin: EdgeInsets.symmetric(horizontal: 16.w),
       height: 50.h,
       decoration: BoxDecoration(
-        color: AppColors.brightGreen,
+        color: AppColors.lightGreen,
         borderRadius: BorderRadius.circular(20.r),
       ),
       child: Row(

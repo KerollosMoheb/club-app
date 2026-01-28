@@ -18,7 +18,7 @@ class EventsCard extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20.r),
-        color: AppColors.deepGrey,
+        color: AppColors.surfaceGrey,
         border: Border.all(color: AppColors.mainGreen),
       ),
       child: Column(
@@ -30,7 +30,7 @@ class EventsCard extends StatelessWidget {
           Text(
             event.title,
             style: AppTextstyles.font16darkGreyW600.copyWith(
-              color: Colors.black,
+              color: AppColors.black,
             ),
           ),
           SizedBox(height: 10.h),
@@ -55,7 +55,7 @@ class EventsCard extends StatelessWidget {
             onTap: () {},
             color: AppColors.mainGreen,
             style: AppTextstyles.font16alreadyTextW600.copyWith(
-              color: Colors.white,
+              color: AppColors.white,
             ),
           ),
           SizedBox(height: 10.h),

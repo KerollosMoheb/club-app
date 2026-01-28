@@ -12,7 +12,7 @@ class MembershipRenewalContainer extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10.r),
-        color: AppColors.deepGrey,
+        color: AppColors.surfaceGrey,
       ),
       child: Padding(
         padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 16.h),
@@ -25,7 +25,7 @@ class MembershipRenewalContainer extends StatelessWidget {
                 Text(
                   AppStrings.membershipRenewal,
                   style: AppTextstyles.font16alreadyTextW600.copyWith(
-                    color: Color(0xff0A0A0A),
+                    color: AppColors.black,
                   ),
                 ),
                 Spacer(),

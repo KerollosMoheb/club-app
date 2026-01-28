@@ -2,9 +2,9 @@ import 'package:club_app/core/helper/extentions.dart';
 import 'package:club_app/core/utils/app_colors.dart';
 import 'package:club_app/core/utils/app_strings.dart';
 import 'package:club_app/core/utils/app_textstyles.dart';
+import 'package:club_app/core/widgets/call_info.dart';
 import 'package:club_app/core/widgets/custom_app_bar.dart';
 import 'package:club_app/core/widgets/custom_button.dart';
-import 'package:club_app/core/widgets/call_info.dart';
 import 'package:club_app/feature/sports_activities/presentation/widgets/days_sport_schedual.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -52,7 +52,7 @@ class SportScreen extends StatelessWidget {
                   Text(
                     AppStrings.workingHours,
                     style: AppTextstyles.font16alreadyTextW600.copyWith(
-                      color: Colors.black,
+                      color: AppColors.black,
                     ),
                   ),
                   SizedBox(height: 18.h),

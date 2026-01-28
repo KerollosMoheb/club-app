@@ -13,9 +13,8 @@ class AchievementsWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 350.w,
-      height: 380.h,
       decoration: BoxDecoration(
-        color: AppColors.deepGrey,
+        color: AppColors.surfaceGrey,
         borderRadius: BorderRadius.circular(20),
       ),
       child: Column(

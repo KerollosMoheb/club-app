@@ -1,3 +1,4 @@
+import 'package:club_app/core/utils/app_colors.dart';
 import 'package:club_app/core/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
 
@@ -23,7 +24,7 @@ class CustomPaymentRow extends StatelessWidget {
               style1 ??
               AppTextstyles.font16alreadyTextW600.copyWith(
                 fontWeight: FontWeight.w400,
-                color: Color(0xff4A5565),
+                color: AppColors.inkBlack3,
               ),
         ),
         Spacer(),
@@ -32,7 +33,7 @@ class CustomPaymentRow extends StatelessWidget {
           style:
               style2 ??
               AppTextstyles.font16alreadyTextW600.copyWith(
-                color: Color(0xff0A0A0A),
+                color: AppColors.black,
               ),
         ),
       ],

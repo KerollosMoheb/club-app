@@ -31,7 +31,7 @@ class ChatWithAlexScreen extends StatelessWidget {
                 Text(
                   AppStrings.chatWithAlex,
                   style: AppTextstyles.font20whiteW600.copyWith(
-                    color: Colors.black,
+                    color: AppColors.black,
                   ),
                 ),
               ],
@@ -76,7 +76,7 @@ class ChatWithAlexScreen extends StatelessWidget {
 
   Widget _buildMessageInput() {
     return Container(
-      decoration: BoxDecoration(color: AppColors.deepGrey),
+      decoration: BoxDecoration(color: AppColors.surfaceGrey),
       child: Padding(
         padding: EdgeInsets.all(16.w),
         child: Row(
