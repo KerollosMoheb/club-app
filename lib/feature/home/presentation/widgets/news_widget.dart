@@ -45,10 +45,11 @@ class NewsWidget extends StatelessWidget {
             child: CustomRowText(
               firstText: AppStrings.abdullah,
               secondtText: AppStrings.jan20261,
-              style1: AppTextstyles.font14lightGreenW300,
-              style2: AppTextstyles.font14lightGreenW300,
+              style1: AppTextstyles.font14mainGreenW300,
+              style2: AppTextstyles.font14mainGreenW300,
             ),
           ),
+          SizedBox(height: 10.h),
         ],
       ),
     );

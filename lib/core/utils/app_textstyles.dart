@@ -62,9 +62,9 @@ class AppTextstyles {
     color: AppColors.black,
     fontWeight: FontWeight.w400,
   );
-  static TextStyle font14lightGreenW300 = TextStyle(
+  static TextStyle font14mainGreenW300 = TextStyle(
     fontSize: 14,
-    color: AppColors.lightGreen,
+    color: AppColors.mainGreen,
     fontWeight: FontWeight.w300,
   );
   static TextStyle font10blackW300 = TextStyle(

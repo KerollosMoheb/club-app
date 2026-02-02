@@ -27,7 +27,11 @@ class VerificationScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 SizedBox(height: 20.h),
-                Image.asset(Assets.imagesScreenshot, width: 300.w),
+                Image.asset(
+                  Assets.imagesScreenshot,
+                  width: 300.w,
+                  height: 288.h,
+                ),
                 SizedBox(height: 40.h),
                 Text(
                   AppStrings.applicationUnderReview,
@@ -59,7 +63,7 @@ class VerificationScreen extends StatelessWidget {
                   color: AppColors.mainGreen,
                   style: AppTextstyles.font20whiteW600,
                   onTap: () {
-                    context.pushNamed(Routes.homeScreen);
+                    context.pushNamed(Routes.mainScreen);
                   },
                 ),
                 SizedBox(height: 20.h),

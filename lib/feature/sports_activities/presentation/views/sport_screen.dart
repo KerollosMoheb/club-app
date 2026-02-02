@@ -62,7 +62,7 @@ class SportScreen extends StatelessWidget {
                     lefttitle: AppStrings.whatsapp,
                     leftIcon: FontAwesomeIcons.whatsapp,
                     rightTitle: AppStrings.call,
-                    rightIcon: FontAwesomeIcons.phone,
+                    rightIcon: Icons.phone_outlined,
                   ),
                   SizedBox(height: 20.h),
                   Row(
@@ -70,7 +70,7 @@ class SportScreen extends StatelessWidget {
                     children: [
                       Padding(
                         padding: EdgeInsets.only(top: 5.h),
-                        child: Icon(FontAwesomeIcons.locationDot, size: 24.sp),
+                        child: Icon(Icons.location_on_outlined, size: 24.sp),
                       ),
                       SizedBox(width: 5.w),
                       Text(

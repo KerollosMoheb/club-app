@@ -23,9 +23,8 @@ class LoginScreen extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              SizedBox(height: 64.h),
               Center(child: Image.asset(Assets.imagesItihad, height: 165)),
-              SizedBox(height: 71.h),
+              SizedBox(height: 51.h),
               CustomTextFormField(text: AppStrings.membershipId),
               SizedBox(height: 26.h),
               CustomTextFormField(text: AppStrings.password),
@@ -36,6 +35,7 @@ class LoginScreen extends StatelessWidget {
                 text: AppStrings.login,
                 color: AppColors.mainGreen,
                 style: AppTextstyles.font20whiteW600,
+                height: 48.h,
                 onTap: () {
                   context.pushReplacementNamed(Routes.mainScreen);
                 },

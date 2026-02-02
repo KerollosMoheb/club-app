@@ -9,7 +9,7 @@ Widget buildBadges() {
   return Row(
     children: [
       TimeAndEatMethod(
-        icon: FontAwesomeIcons.clock,
+        icon: Icons.access_time_filled,
         colorText: AppColors.linkBlue,
         colorBackground: AppColors.lightBlueBg,
         text: AppStrings.preparationTime15to20,

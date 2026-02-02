@@ -54,7 +54,7 @@ class CallInfo extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Icon(rightIcon, color: AppColors.mainGreen),
+              Icon(rightIcon, color: AppColors.mainGreen, size: 20.sp),
               SizedBox(width: 10.w),
               Text(
                 rightTitle,
