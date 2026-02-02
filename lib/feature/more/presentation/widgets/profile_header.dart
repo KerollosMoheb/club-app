@@ -15,9 +15,13 @@ class ProfileHeader extends StatelessWidget {
       children: [
         Stack(
           children: [
-            CircleAvatar(
-              radius: 40.r,
-              backgroundImage: AssetImage(Assets.imagesGirl),
+            SizedBox(
+              width: 100.w,
+              height: 100.h,
+              child: CircleAvatar(
+                radius: 40.r,
+                backgroundImage: AssetImage(Assets.imagesGirl),
+              ),
             ),
             if (showEditIcon)
               Positioned(
@@ -32,7 +36,7 @@ class ProfileHeader extends StatelessWidget {
                   child: Icon(
                     Icons.edit,
                     color: AppColors.mainGreen,
-                    size: 20.sp,
+                    size: 18.sp,
                   ),
                 ),
               ),

@@ -4,17 +4,63 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class DateSelector extends StatelessWidget {
+class DateSelector extends StatefulWidget {
   final List<DateTime> dates;
   final DateTime selectedDate;
   final ValueChanged<DateTime> onDateSelected;
+  final VoidCallback onCalendarTap;
 
   const DateSelector({
     super.key,
     required this.dates,
     required this.selectedDate,
     required this.onDateSelected,
+    required this.onCalendarTap,
   });
+
+  @override
+  State<DateSelector> createState() => _DateSelectorState();
+}
+
+class _DateSelectorState extends State<DateSelector> {
+  late ScrollController _scrollController;
+  final double _itemWidth = 68.w; // 60.w (width) + 8.w (margins)
+
+  @override
+  void initState() {
+    super.initState();
+    _scrollController = ScrollController();
+    // Scroll to the selected date after the first frame
+    WidgetsBinding.instance.addPostFrameCallback((_) => _scrollToSelected());
+  }
+
+  @override
+  void didUpdateWidget(DateSelector oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    // If the selected date changed (e.g., from the calendar), scroll to it
+    if (widget.selectedDate != oldWidget.selectedDate) {
+      _scrollToSelected();
+    }
+  }
+
+  void _scrollToSelected() {
+    final index = widget.dates.indexWhere(
+      (d) => _isSameDay(d, widget.selectedDate),
+    );
+    if (index != -1 && _scrollController.hasClients) {
+      _scrollController.animateTo(
+        index * _itemWidth,
+        duration: const Duration(milliseconds: 500),
+        curve: Curves.easeInOut,
+      );
+    }
+  }
+
+  @override
+  void dispose() {
+    _scrollController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -28,19 +74,26 @@ class DateSelector extends StatelessWidget {
               color: AppColors.mainGreen,
               size: 16.sp,
             ),
-            onPressed: () {},
+            onPressed: () {
+              _scrollController.animateTo(
+                _scrollController.offset - _itemWidth * 3,
+                duration: const Duration(milliseconds: 300),
+                curve: Curves.linear,
+              );
+            },
           ),
           Expanded(
             child: ListView.builder(
+              controller: _scrollController, // Attach the controller
               scrollDirection: Axis.horizontal,
-              itemCount: dates.length,
+              itemCount: widget.dates.length,
               itemBuilder: (context, index) {
-                final date = dates[index];
-                final isSelected = _isSameDay(date, selectedDate);
+                final date = widget.dates[index];
+                final isSelected = _isSameDay(date, widget.selectedDate);
                 final isToday = _isSameDay(date, DateTime.now());
 
                 return GestureDetector(
-                  onTap: () => onDateSelected(date),
+                  onTap: () => widget.onDateSelected(date),
                   child: Container(
                     width: 60.w,
                     margin: EdgeInsets.symmetric(horizontal: 4.w),
@@ -85,41 +138,34 @@ class DateSelector extends StatelessWidget {
           ),
           IconButton(
             icon: Icon(
-              FontAwesomeIcons.chevronRight,
+              FontAwesomeIcons.calendarDay,
               color: AppColors.mainGreen,
-              size: 16.sp,
+              size: 18.sp,
             ),
-            onPressed: () {},
+            onPressed: widget.onCalendarTap,
           ),
         ],
       ),
     );
   }
 
-  bool _isSameDay(DateTime a, DateTime b) {
-    return a.year == b.year && a.month == b.month && a.day == b.day;
-  }
-
-  String _getWeekday(DateTime date) {
-    const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
-    return days[date.weekday - 1];
-  }
-
-  String _getMonth(DateTime date) {
-    const months = [
-      'Jan',
-      'Feb',
-      'Mar',
-      'Apr',
-      'May',
-      'Jun',
-      'Jul',
-      'Aug',
-      'Sep',
-      'Oct',
-      'Nov',
-      'Dec',
-    ];
-    return months[date.month - 1];
-  }
+  // Helper Methods
+  bool _isSameDay(DateTime a, DateTime b) =>
+      a.year == b.year && a.month == b.month && a.day == b.day;
+  String _getWeekday(DateTime date) =>
+      ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'][date.weekday - 1];
+  String _getMonth(DateTime date) => [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dec',
+  ][date.month - 1];
 }

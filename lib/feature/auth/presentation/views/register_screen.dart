@@ -22,7 +22,6 @@ class RegisterScreen extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              SizedBox(height: 64.h),
               Center(child: Image.asset(Assets.imagesItihad, height: 165)),
               SizedBox(height: 22.h),
               CustomTextFormField(text: AppStrings.membershipId),
@@ -39,6 +38,7 @@ class RegisterScreen extends StatelessWidget {
                 text: AppStrings.register,
                 color: AppColors.mainGreen,
                 style: AppTextstyles.font20whiteW600,
+                height: 48.h,
                 onTap: () {
                   context.pushReplacementNamed(Routes.mainScreen);
                 },

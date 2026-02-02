@@ -22,17 +22,21 @@ class CategorySize extends StatelessWidget {
 
   Widget _buildBadge(String text, Color color) {
     return Container(
+      width: 100.w,
+      height: 32.h,
       padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 6.h),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20.r),
         color: AppColors.surfaceGrey,
         border: Border.all(color: color),
       ),
-      child: Text(
-        text,
-        style: AppTextstyles.font12mainGreenW400.copyWith(
-          fontWeight: FontWeight.w600,
-          color: color,
+      child: Center(
+        child: Text(
+          text,
+          style: AppTextstyles.font12mainGreenW400.copyWith(
+            fontWeight: FontWeight.w600,
+            color: color,
+          ),
         ),
       ),
     );

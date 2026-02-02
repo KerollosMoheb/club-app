@@ -8,6 +8,7 @@ import 'package:club_app/feature/matches/presentation/widgets/match_score_card.d
 import 'package:club_app/feature/matches/presentation/widgets/sport_category_chip.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:table_calendar/table_calendar.dart';
 
 class MatchesScreen extends StatefulWidget {
   const MatchesScreen({super.key});
@@ -27,6 +28,69 @@ class _MatchesScreenState extends State<MatchesScreen> {
     {'name': AppStrings.tennis, 'icon': Icons.sports_tennis},
     {'name': AppStrings.rugby, 'icon': Icons.sports_rugby},
   ];
+  void _showCalendar(BuildContext context) {
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.white,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(25.r)),
+      ),
+      builder: (context) => Container(
+        padding: EdgeInsets.all(16.w),
+        height: 450.h,
+        child: TableCalendar(
+          firstDay: DateTime.utc(2024, 1, 1),
+          lastDay: DateTime.utc(2030, 12, 31),
+          focusedDay: DateTime.now(),
+          // Matches the header style in your second screenshot
+          headerStyle: HeaderStyle(
+            formatButtonVisible: false,
+            titleCentered: true,
+            titleTextStyle: AppTextstyles.font18blackW500,
+            leftChevronIcon: Icon(
+              Icons.chevron_left,
+              color: AppColors.mainGreen,
+            ),
+            rightChevronIcon: Icon(
+              Icons.chevron_right,
+              color: AppColors.mainGreen,
+            ),
+          ),
+          // Customizing the Day appearances
+          calendarStyle: CalendarStyle(
+            defaultTextStyle: AppTextstyles.font12blackW500,
+            weekendTextStyle: AppTextstyles.font12blackW500.copyWith(
+              color: Colors.red,
+            ),
+
+            // Current day highlight (Light green circle)
+            todayDecoration: BoxDecoration(
+              color: AppColors.lightGreen,
+              shape: BoxShape.circle,
+            ),
+            todayTextStyle: AppTextstyles.font12blackW700.copyWith(
+              color: AppColors.mainGreen,
+            ),
+
+            // Selected day highlight (Solid green circle)
+            selectedDecoration: BoxDecoration(
+              color: AppColors.mainGreen,
+              shape: BoxShape.circle,
+            ),
+          ),
+          // Use this to handle when a user clicks a day
+          onDaySelected: (selectedDay, focusedDay) {
+            setState(() {
+              _selectedDate = selectedDay;
+            });
+            Navigator.pop(context); // Close the calendar
+          },
+          selectedDayPredicate: (day) => isSameDay(_selectedDate, day),
+        ),
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -61,6 +125,7 @@ class _MatchesScreenState extends State<MatchesScreen> {
                   ),
                 ),
                 SizedBox(height: 16.h),
+                // Inside your Column in build()
                 DateSelector(
                   dates: List.generate(
                     7,
@@ -72,6 +137,9 @@ class _MatchesScreenState extends State<MatchesScreen> {
                       _selectedDate = date;
                     });
                   },
+                  onCalendarTap: () => _showCalendar(
+                    context,
+                  ), // Trigger your calendar function here
                 ),
                 SizedBox(height: 24.h),
                 Padding(

@@ -25,7 +25,7 @@ class TimeAndEatMethod extends StatelessWidget {
         padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 8.h),
         child: Row(
           children: [
-            Icon(icon, color: colorText, size: 20),
+            Icon(icon, color: colorText, size: 24),
             SizedBox(width: 7.w),
             Text(
               text,

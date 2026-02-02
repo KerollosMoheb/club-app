@@ -83,12 +83,23 @@ class ChatWithAlexScreen extends StatelessWidget {
           children: [
             Icon(Icons.add, color: AppColors.mainGreen),
             SizedBox(width: 10.w),
-            Expanded(
+            SizedBox(
+              width: 245.w,
+              height: 32.h,
               child: TextField(
                 decoration: InputDecoration(
                   contentPadding: EdgeInsets.symmetric(horizontal: 15.w),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12.r),
+                    borderSide: BorderSide(color: AppColors.mainGreen),
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12.r),
+                    borderSide: BorderSide(color: AppColors.mainGreen),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12.r),
+                    borderSide: BorderSide(color: AppColors.mainGreen),
                   ),
                 ),
               ),

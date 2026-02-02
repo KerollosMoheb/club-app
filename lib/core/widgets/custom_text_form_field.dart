@@ -17,7 +17,15 @@ class CustomTextFormField extends StatelessWidget {
           hintStyle: AppTextstyles.font18blackW500,
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(20),
-            borderSide: BorderSide(color: AppColors.mainGreen),
+            borderSide: const BorderSide(color: AppColors.mainGreen),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(20),
+            borderSide: const BorderSide(color: AppColors.mainGreen),
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(20),
+            borderSide: const BorderSide(color: AppColors.mainGreen),
           ),
         ),
       ),
