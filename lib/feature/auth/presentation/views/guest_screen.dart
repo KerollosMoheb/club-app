@@ -40,13 +40,13 @@ class GuestScreen extends StatelessWidget {
               Text('or', style: AppTextstyles.font20orTextW400),
               SizedBox(height: 26.h),
               GoogleAndFacebook(
-                imagePath: Assets.imagesGoogle,
+                imagePath: Assets.imagesDeviconGoogle,
                 text: AppStrings.continueWithGoogle,
                 onTap: () {},
               ),
               SizedBox(height: 24.h),
               GoogleAndFacebook(
-                imagePath: Assets.imagesFacebook,
+                imagePath: Assets.imagesLogosFacebook,
                 text: AppStrings.continueWithFacebook,
                 onTap: () {},
               ),

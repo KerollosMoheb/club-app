@@ -31,4 +31,7 @@ class Routes {
   static const String aboutUsScreen = '/aboutUsScreen';
   static const String helpAndSupportScreen = '/helpAndSupportScreen';
   static const String chatWithAlexScreen = '/chatWithAlexScreen';
+  static const String pointsAndRewardsScreen = '/pointsAndRewardsScreen';
+  static const String increaseYourPointsScreen = '/increaseYourPointsScreen';
 }
+

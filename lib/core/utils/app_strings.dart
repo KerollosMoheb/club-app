@@ -258,6 +258,7 @@ class AppStrings {
   static const String heba = 'Heba Mahmoud';
   static const String account = 'Account';
   static const String profile = 'Profile';
+  static const String points = 'Points & Rewards';
   static const String language = 'Language';
   static const String preferences = 'Preferences';
   static const String reservations = 'Reservations';

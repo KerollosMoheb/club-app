@@ -17,8 +17,10 @@ import 'package:club_app/feature/more/presentation/views/chat_with_alex_screen.d
 import 'package:club_app/feature/more/presentation/views/complaint_screen.dart';
 import 'package:club_app/feature/more/presentation/views/directors_screen.dart';
 import 'package:club_app/feature/more/presentation/views/help_and_support_screen.dart';
+import 'package:club_app/feature/more/presentation/views/increase_your_points_screen.dart';
 import 'package:club_app/feature/more/presentation/views/more_screen.dart';
 import 'package:club_app/feature/more/presentation/views/my_reservations_screen.dart';
+import 'package:club_app/feature/more/presentation/views/points_and_reward_screen.dart';
 import 'package:club_app/feature/more/presentation/views/privacy_and_policy_screen.dart';
 import 'package:club_app/feature/more/presentation/views/profile_screen.dart';
 import 'package:club_app/feature/renew/presentation/views/payment_details_screen.dart';
@@ -148,6 +150,14 @@ class AppRouter {
       case Routes.chatWithAlexScreen:
         return MaterialPageRoute(
           builder: (context) => const ChatWithAlexScreen(),
+        );
+      case Routes.pointsAndRewardsScreen:
+        return MaterialPageRoute(
+          builder: (context) => const PointsAndRewardScreen(),
+        );
+      case Routes.increaseYourPointsScreen:
+        return MaterialPageRoute(
+          builder: (context) => const IncreaseYourPointsScreen(),
         );
       default:
         return MaterialPageRoute(
