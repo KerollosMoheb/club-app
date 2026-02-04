@@ -61,6 +61,9 @@ class _MatchDetailsScreenState extends State<MatchDetailsScreen> {
                   widget.homeScorers,
                   widget.awayScorers,
                 ),
+                Divider(color: AppColors.surfaceGrey, thickness: 2),
+                SizedBox(height: 18.h),
+                buildGuessView(),
                 SizedBox(height: 24.h),
                 _buildTabBar(),
                 SizedBox(height: 24.h),
@@ -142,6 +145,78 @@ class _MatchDetailsScreenState extends State<MatchDetailsScreen> {
                 ),
               ),
             ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget buildGuessView() {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 20.w),
+      child: Column(
+        children: [
+          Row(
+            children: [
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text("Who will win?", style: AppTextstyles.font14blackW600),
+                  Text(
+                    'Total Votes: 10K',
+                    style: AppTextstyles.font11blackW400.copyWith(
+                      color: AppColors.mainGreen,
+                    ),
+                  ),
+                ],
+              ),
+              Spacer(),
+              IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.edit, color: AppColors.mainGreen, size: 24),
+              ),
+            ],
+          ),
+          SizedBox(height: 20.h),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Container(
+                width: 80.w,
+                height: 44.h,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20.r),
+                  color: AppColors.surfaceGrey,
+                  border: Border.all(color: AppColors.mainGreen),
+                ),
+                child: Center(child: Image.asset(widget.homeLogo, width: 30.w)),
+              ),
+              Container(
+                width: 80.w,
+                height: 44.h,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20.r),
+                  color: AppColors.surfaceGrey,
+                  border: Border.all(color: AppColors.mainGreen),
+                ),
+                child: Center(
+                  child: Text(
+                    'X',
+                    style: AppTextstyles.font14blackW600.copyWith(fontSize: 24),
+                  ),
+                ),
+              ),
+              Container(
+                width: 80.w,
+                height: 44.h,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20.r),
+                  color: AppColors.surfaceGrey,
+                  border: Border.all(color: AppColors.mainGreen),
+                ),
+                child: Center(child: Image.asset(widget.awayLogo, width: 30.w)),
+              ),
+            ],
           ),
         ],
       ),

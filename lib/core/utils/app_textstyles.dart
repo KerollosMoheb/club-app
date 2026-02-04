@@ -97,4 +97,9 @@ class AppTextstyles {
     color: AppColors.black,
     fontWeight: FontWeight.w700,
   );
+  static TextStyle font30blackW700 = TextStyle(
+    fontSize: 30,
+    color: AppColors.black,
+    fontWeight: FontWeight.w700,
+  );
 }

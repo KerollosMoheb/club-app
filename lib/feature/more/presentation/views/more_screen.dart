@@ -33,6 +33,15 @@ class MoreScreen extends StatelessWidget {
                   context.pushNamed(Routes.profileScreen);
                 },
               ),
+              Divider(thickness: .1),
+              MoreTile(
+                title: AppStrings.points,
+                icon: Icons.verified_user,
+                onTap: () {
+                  context.pushNamed(Routes.pointsAndRewardsScreen);
+                },
+              ),
+              Divider(thickness: .1),
               MoreTile(
                 title: AppStrings.notifications,
                 icon: Icons.notifications,
@@ -40,6 +49,7 @@ class MoreScreen extends StatelessWidget {
                   context.pushNamed(Routes.notificationScreen);
                 },
               ),
+              Divider(thickness: .1),
               MoreTile(
                 title: AppStrings.language,
                 icon: Icons.translate,
@@ -72,6 +82,7 @@ class MoreScreen extends StatelessWidget {
                   context.pushNamed(Routes.myReservationsScreen);
                 },
               ),
+              Divider(thickness: .2),
               MoreTile(
                 title: AppStrings.complaints,
                 icon: Icons.chat_bubble_outline,
@@ -79,6 +90,7 @@ class MoreScreen extends StatelessWidget {
                   context.pushNamed(Routes.complaintScreen);
                 },
               ),
+              Divider(thickness: .2),
               MoreTile(
                 title: AppStrings.abouttheclub,
                 icon: Icons.info_outline,
@@ -86,6 +98,7 @@ class MoreScreen extends StatelessWidget {
                   context.pushNamed(Routes.aboutUsScreen);
                 },
               ),
+              Divider(thickness: .2),
               MoreTile(
                 title: AppStrings.board,
                 icon: Icons.groups,

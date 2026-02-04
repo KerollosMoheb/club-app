@@ -19,6 +19,14 @@ class Assets {
   /// assets/images/barcelona.png
   static const String imagesBarcelona = "assets/images/barcelona.png";
 
+  /// Assets for imagesBasketball
+  /// assets/images/basketball.png
+  static const String imagesBasketball = "assets/images/basketball.png";
+
+  /// Assets for imagesBot
+  /// assets/images/bot.png
+  static const String imagesBot = "assets/images/bot.png";
+
   /// Assets for imagesCard
   /// assets/images/card.png
   static const String imagesCard = "assets/images/card.png";
@@ -39,13 +47,29 @@ class Assets {
   /// assets/images/datePlain.png
   static const String imagesDatePlain = "assets/images/datePlain.png";
 
+  /// Assets for imagesDavidChen
+  /// assets/images/DavidChen.png
+  static const String imagesDavidChen = "assets/images/DavidChen.png";
+
   /// Assets for imagesDeviconGoogle
   /// assets/images/devicon_google.png
-  static const String imagesGoogle = "assets/images/devicon_google.png";
+  static const String imagesDeviconGoogle = "assets/images/devicon_google.png";
+
+  /// Assets for imagesElenaRodriguez
+  /// assets/images/ElenaRodriguez.png
+  static const String imagesElenaRodriguez = "assets/images/ElenaRodriguez.png";
 
   /// Assets for imagesFemaleDoctor
   /// assets/images/femaleDoctor.png
   static const String imagesFemaleDoctor = "assets/images/femaleDoctor.png";
+
+  /// Assets for imagesFootall
+  /// assets/images/footall.png
+  static const String imagesFootall = "assets/images/footall.png";
+
+  /// Assets for imagesGirl
+  /// assets/images/girl.png
+  static const String imagesGirl = "assets/images/girl.png";
 
   /// Assets for imagesHandBall
   /// assets/images/handBall.png
@@ -67,9 +91,13 @@ class Assets {
   /// assets/images/image.png
   static const String imagesImage = "assets/images/image.png";
 
+  /// Assets for imagesItihad
+  /// assets/images/itihad.png
+  static const String imagesItihad = "assets/images/itihad.png";
+
   /// Assets for imagesLogosFacebook
   /// assets/images/logos_facebook.png
-  static const String imagesFacebook = "assets/images/logos_facebook.png";
+  static const String imagesLogosFacebook = "assets/images/logos_facebook.png";
 
   /// Assets for imagesMaleDoctor
   /// assets/images/maleDoctor.png
@@ -83,6 +111,10 @@ class Assets {
   /// assets/images/marathon.png
   static const String imagesMarathon = "assets/images/marathon.png";
 
+  /// Assets for imagesMarcusSterling
+  /// assets/images/MarcusSterling.png
+  static const String imagesMarcusSterling = "assets/images/MarcusSterling.png";
+
   /// Assets for imagesMatchesActive
   /// assets/images/matchesActive.png
   static const String imagesMatchesActive = "assets/images/matchesActive.png";
@@ -91,6 +123,10 @@ class Assets {
   /// assets/images/matchesInActive.png
   static const String imagesMatchesInActive =
       "assets/images/matchesInActive.png";
+
+  /// Assets for imagesMokhtabar
+  /// assets/images/mokhtabar.png
+  static const String imagesMokhtabar = "assets/images/mokhtabar.png";
 
   /// Assets for imagesMoreActive
   /// assets/images/moreActive.png
@@ -104,6 +140,10 @@ class Assets {
   /// assets/images/notifications.png
   static const String imagesNotifications = "assets/images/notifications.png";
 
+  /// Assets for imagesPTSession
+  /// assets/images/PTSession.png
+  static const String imagesPTSession = "assets/images/PTSession.png";
+
   /// Assets for imagesPeanutButter
   /// assets/images/peanutButter.png
   static const String imagesPeanutButter = "assets/images/peanutButter.png";
@@ -115,6 +155,14 @@ class Assets {
   /// Assets for imagesProtoMarina
   /// assets/images/protoMarina.png
   static const String imagesProtoMarina = "assets/images/protoMarina.png";
+
+  /// Assets for imagesRobertTaylor
+  /// assets/images/RobertTaylor.png
+  static const String imagesRobertTaylor = "assets/images/RobertTaylor.png";
+
+  /// Assets for imagesSarahJenkins
+  /// assets/images/SarahJenkins.png
+  static const String imagesSarahJenkins = "assets/images/SarahJenkins.png";
 
   /// Assets for imagesSaudiHospital
   /// assets/images/saudiHospital.png
@@ -136,10 +184,6 @@ class Assets {
   /// Assets for imagesSmouha
   /// assets/images/smouha.png
   static const String imagesSmouha = "assets/images/smouha.png";
-
-  /// Assets for imagesSmouhaSCLogo 1
-  /// assets/images/Smouha_SC_logo 1.png
-  static const String imagesItihad = "assets/images/Smouha_SC_logo1.png";
 
   /// Assets for imagesStuttgart
   /// assets/images/stuttgart.png
@@ -168,44 +212,4 @@ class Assets {
   /// Assets for imagesZamalek
   /// assets/images/zamalek.png
   static const String imagesZamalek = "assets/images/zamalek.png";
-
-  /// Assets for imagesFootall
-  /// assets/images/footall.png
-  static const String imagesFootall = "assets/images/footall.png";
-
-  /// Assets for imagesBasketball
-  /// assets/images/basketball.png
-  static const String imagesBasketball = "assets/images/basketball.png";
-
-  /// Assets for imagesMokhtabar
-  /// assets/images/mokhtabar.png
-  static const String imagesMokhtabar = "assets/images/mokhtabar.png";
-
-  /// Assets for imagesBot
-  /// assets/images/bot.png
-  static const String imagesBot = "assets/images/bot.png";
-
-  /// Assets for imagesDavidChen
-  /// assets/images/DavidChen.png
-  static const String imagesDavidChen = "assets/images/DavidChen.png";
-
-  /// Assets for imagesElenaRodriguez
-  /// assets/images/ElenaRodriguez.png
-  static const String imagesElenaRodriguez = "assets/images/ElenaRodriguez.png";
-
-  /// Assets for imagesGirl
-  /// assets/images/girl.png
-  static const String imagesGirl = "assets/images/girl.png";
-
-  /// Assets for imagesMarcusSterling
-  /// assets/images/MarcusSterling.png
-  static const String imagesMarcusSterling = "assets/images/MarcusSterling.png";
-
-  /// Assets for imagesRobertTaylor
-  /// assets/images/RobertTaylor.png
-  static const String imagesRobertTaylor = "assets/images/RobertTaylor.png";
-
-  /// Assets for imagesSarahJenkins
-  /// assets/images/SarahJenkins.png
-  static const String imagesSarahJenkins = "assets/images/SarahJenkins.png";
 }
