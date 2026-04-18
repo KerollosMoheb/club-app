@@ -7,6 +7,8 @@ class Routes {
   static const String homeScreen = '/homeScreen';
   static const String mainScreen = '/mainScreen';
   static const String notificationScreen = '/notificationScreen';
+  static const String gymScreen = '/gymScreen';
+  static const String shopScreen = '/shopScreen';
   static const String newsScreen = '/newsScreen';
   static const String achievementsScreen = '/achievementsScreen';
   static const String medicalClinicsScreen = '/medicalClinicsScreen';
@@ -15,7 +17,8 @@ class Routes {
   static const String sportScreen = '/sportScreen';
   static const String discountScreen = '/discountScreen';
   static const String restaurantsAndCafesScreen = '/restaurantsAndCafesScreen';
-  static const String restaurantsAndCafesDetailsScreen = '/restaurantsAndCafesDetailsScreen';
+  static const String restaurantsAndCafesDetailsScreen =
+      '/restaurantsAndCafesDetailsScreen';
   static const String eventsScreen = '/eventsScreen';
   static const String renewScreen = '/renewScreen';
   static const String uploadDocumentScreen = '/uploadDocumentScreen';
@@ -34,4 +37,3 @@ class Routes {
   static const String pointsAndRewardsScreen = '/pointsAndRewardsScreen';
   static const String increaseYourPointsScreen = '/increaseYourPointsScreen';
 }
-

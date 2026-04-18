@@ -3,15 +3,15 @@ import 'package:club_app/core/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class HomeItems extends StatelessWidget {
-  const HomeItems({
+class ServiceItems extends StatelessWidget {
+  const ServiceItems({
     super.key,
     required this.text,
     required this.icon,
     this.onTap,
   });
   final String text;
-  final IconData icon;
+  final Widget icon;
   final void Function()? onTap;
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,7 @@ class HomeItems extends StatelessWidget {
           borderRadius: BorderRadius.circular(20.r),
         ),
         child: Column(
-          mainAxisSize: MainAxisSize.min,
+          //  mainAxisSize: MainAxisSize.min,
           children: [
             Container(
               width: 52.w,
@@ -33,7 +33,7 @@ class HomeItems extends StatelessWidget {
                 color: AppColors.lightGreen,
                 borderRadius: BorderRadius.circular(10.r),
               ),
-              child: Icon(icon, color: AppColors.black, size: 24.sp),
+              child: Center(child: icon),
             ),
             Expanded(
               child: Center(

@@ -14,12 +14,27 @@ class AppStrings {
   static const String continueWithFacebook = 'Continue with Facebook';
 
   static const String membershipId = 'Membership ID';
+  static const String gym1 = 'Ladies Gym';
+  static const String gym2 = 'International Gym';
+  static const String gym3 = 'Team Gym';
+  static const String gym4 = 'Men’s Gym';
+  static const String gym5 = 'Olympic Gym';
+  static const String shop1 = 'Candy shop';
+  static const String shop2 = 'B & S Sports Wear ';
+  static const String shop3 = 'Mad Candy';
+  static const String shop4 = 'Pro Shop';
+
   static const String email = 'Email';
   static const String phoneNumber = 'Phone Number';
   static const String password = 'Password';
   static const String confirmPassword = 'Confirm Password';
   static const String register = 'Register';
   static const String login = 'Login';
+  static const String busRoutes = 'Bus Routes';
+  static const String shops = 'Shops';
+  static const String gyms = 'Gyms';
+  static const String trips = 'Trips';
+  static const String others = 'Others';
 
   static const String bycontinuing =
       'By continuing, you have read and agree to Re-lease’s                    ';

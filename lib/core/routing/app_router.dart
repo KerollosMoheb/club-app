@@ -29,6 +29,8 @@ import 'package:club_app/feature/renew/presentation/views/upload_document_screen
 import 'package:club_app/feature/renew/presentation/views/verification_screen.dart';
 import 'package:club_app/feature/restaurants_cafes/presentation/views/restaurants_and_cafes_details_screen.dart';
 import 'package:club_app/feature/restaurants_cafes/presentation/views/restaurants_and_cafes_screen.dart';
+import 'package:club_app/feature/services/presentation/views/gym_screen.dart';
+import 'package:club_app/feature/services/presentation/views/shop_screen.dart';
 import 'package:club_app/feature/splash/presentation/views/splash_screen.dart';
 import 'package:club_app/feature/sports_activities/presentation/views/sport_screen.dart';
 import 'package:club_app/feature/sports_activities/presentation/views/sports_activities_screen.dart';
@@ -42,6 +44,10 @@ class AppRouter {
         return MaterialPageRoute(builder: (context) => const SplashScreen());
       case Routes.startScreen:
         return MaterialPageRoute(builder: (context) => const StartScreen());
+      case Routes.gymScreen:
+        return MaterialPageRoute(builder: (context) => GymScreen());
+      case Routes.shopScreen:
+        return MaterialPageRoute(builder: (context) => ShopScreen());
       case Routes.registerScreen:
         return MaterialPageRoute(builder: (context) => const RegisterScreen());
       case Routes.loginScreen:

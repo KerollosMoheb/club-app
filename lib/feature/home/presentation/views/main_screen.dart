@@ -3,7 +3,7 @@ import 'package:club_app/feature/home/data/nav_item.dart';
 import 'package:club_app/feature/home/presentation/views/home_screen.dart';
 import 'package:club_app/feature/matches/presentation/views/matches_screen.dart';
 import 'package:club_app/feature/more/presentation/views/more_screen.dart';
-import 'package:club_app/feature/services/presentation/services_screen.dart';
+import 'package:club_app/feature/services/presentation/views/services_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
