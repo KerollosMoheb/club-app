@@ -5,13 +5,13 @@ import 'package:club_app/core/utils/app_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-void main() {
-  runApp(ClubApp(appRouter: AppRouter()));
-}
 
 class ClubApp extends StatelessWidget {
-  const ClubApp({super.key, required this.appRouter});
+  ClubApp({super.key, AppRouter? appRouter})
+      : appRouter = appRouter ?? AppRouter();
+
   final AppRouter appRouter;
+
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
