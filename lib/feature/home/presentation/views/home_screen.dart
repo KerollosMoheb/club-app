@@ -31,7 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
     },
     {
       'title': AppStrings.discount,
-      'icon': FontAwesomeIcons.percentage,
+      'icon': FontAwesomeIcons.percent,
       'route': Routes.discountScreen,
     },
     {

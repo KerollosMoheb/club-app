@@ -2,6 +2,7 @@ import 'package:club_app/core/utils/app_colors.dart';
 import 'package:club_app/core/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class CallInfo extends StatelessWidget {
   const CallInfo({
@@ -12,9 +13,9 @@ class CallInfo extends StatelessWidget {
     required this.rightIcon,
   });
   final String lefttitle;
-  final IconData leftIcon;
+  final FaIconData leftIcon;
   final String rightTitle;
-  final IconData rightIcon;
+  final FaIconData rightIcon;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -31,7 +32,7 @@ class CallInfo extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(leftIcon, color: AppColors.mainGreen),
+                FaIcon(leftIcon, color: AppColors.mainGreen),
                 SizedBox(width: 10.w),
                 Text(
                   lefttitle,
@@ -54,7 +55,7 @@ class CallInfo extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Icon(rightIcon, color: AppColors.mainGreen, size: 20.sp),
+              FaIcon(rightIcon, color: AppColors.mainGreen, size: 20.sp),
               SizedBox(width: 10.w),
               Text(
                 rightTitle,

@@ -69,7 +69,7 @@ class _DateSelectorState extends State<DateSelector> {
       child: Row(
         children: [
           IconButton(
-            icon: Icon(
+            icon: FaIcon(
               FontAwesomeIcons.chevronLeft,
               color: AppColors.mainGreen,
               size: 16.sp,
@@ -137,7 +137,7 @@ class _DateSelectorState extends State<DateSelector> {
             ),
           ),
           IconButton(
-            icon: Icon(
+            icon: FaIcon(
               FontAwesomeIcons.calendarDay,
               color: AppColors.mainGreen,
               size: 18.sp,

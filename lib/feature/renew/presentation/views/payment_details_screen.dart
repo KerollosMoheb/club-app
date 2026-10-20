@@ -86,7 +86,7 @@ class PaymentDetailsScreen extends StatelessWidget {
                     ),
                     child: Row(
                       children: [
-                        Icon(FontAwesomeIcons.apple, size: 24.h),
+                        FaIcon(FontAwesomeIcons.apple, size: 24.h),
                         SizedBox(width: 3.w),
                         Text(
                           AppStrings.applePay,

@@ -2,6 +2,7 @@ import 'package:club_app/core/utils/app_colors.dart';
 import 'package:club_app/core/utils/app_textstyles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class HomeItems extends StatelessWidget {
   const HomeItems({
@@ -11,7 +12,7 @@ class HomeItems extends StatelessWidget {
     this.onTap,
   });
   final String text;
-  final IconData icon;
+  final FaIconData icon;
   final void Function()? onTap;
   @override
   Widget build(BuildContext context) {
@@ -33,7 +34,9 @@ class HomeItems extends StatelessWidget {
                 color: AppColors.lightGreen,
                 borderRadius: BorderRadius.circular(10.r),
               ),
-              child: Icon(icon, color: AppColors.mainGreen, size: 24.sp),
+              child: Center(
+                child: FaIcon(icon, color: AppColors.mainGreen, size: 24.sp),
+              ),
             ),
             Expanded(
               child: Center(

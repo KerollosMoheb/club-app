@@ -25,7 +25,7 @@ class MembershipStatusContainer extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Icon(
+                  FaIcon(
                     FontAwesomeIcons.calendar,
                     size: 20.sp,
                     color: AppColors.mainGreen,

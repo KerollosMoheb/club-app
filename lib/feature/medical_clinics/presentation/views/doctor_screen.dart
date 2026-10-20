@@ -68,7 +68,7 @@ class DoctorScreen extends StatelessWidget {
                       children: [
                         Padding(
                           padding: EdgeInsets.only(top: 5.h),
-                          child: Icon(
+                          child: FaIcon(
                             FontAwesomeIcons.locationDot,
                             size: 24.sp,
                           ),

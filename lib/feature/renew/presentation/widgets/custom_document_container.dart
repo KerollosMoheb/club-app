@@ -77,7 +77,7 @@ class CustomDocumentContainer extends StatelessWidget {
               ),
             ),
             SizedBox(width: 8.w),
-            Icon(FontAwesomeIcons.upload, size: 18.sp, color: AppColors.white),
+            FaIcon(FontAwesomeIcons.upload, size: 18.sp, color: AppColors.white),
           ],
         ),
       ),

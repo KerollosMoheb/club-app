@@ -11,7 +11,7 @@ AppBar customAppBar(void Function()? onPressed, String? text) {
     backgroundColor: AppColors.white,
     leading: IconButton(
       onPressed: onPressed,
-      icon: Icon(FontAwesomeIcons.chevronLeft, color: AppColors.mainGreen),
+      icon: FaIcon(FontAwesomeIcons.chevronLeft, color: AppColors.mainGreen),
     ),
     centerTitle: true,
     title: Text(

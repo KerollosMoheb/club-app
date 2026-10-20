@@ -27,7 +27,7 @@ class DaysSportSchedual extends StatelessWidget {
                 ),
                 Row(
                   children: [
-                    Icon(
+                    FaIcon(
                       FontAwesomeIcons.clock,
                       size: 17,
                       color: AppColors.inkBlack,
@@ -35,7 +35,7 @@ class DaysSportSchedual extends StatelessWidget {
                     SizedBox(width: 20.w),
                     Text('10:00 AM'),
                     SizedBox(width: 10.w),
-                    Icon(
+                    FaIcon(
                       FontAwesomeIcons.arrowRight,
                       size: 13,
                       color: AppColors.inkBlack,
@@ -65,7 +65,7 @@ class DaysSportSchedual extends StatelessWidget {
                 ),
                 Row(
                   children: [
-                    Icon(
+                    FaIcon(
                       FontAwesomeIcons.clock,
                       size: 17,
                       color: AppColors.inkBlack,
@@ -73,7 +73,7 @@ class DaysSportSchedual extends StatelessWidget {
                     SizedBox(width: 20.w),
                     Text('3:00 AM'),
                     SizedBox(width: 10.w),
-                    Icon(
+                    FaIcon(
                       FontAwesomeIcons.arrowRight,
                       size: 13,
                       color: AppColors.inkBlack,

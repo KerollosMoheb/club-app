@@ -16,7 +16,7 @@ Widget buildBadges() {
       ),
       SizedBox(width: 8.w),
       TimeAndEatMethod(
-        icon: FontAwesomeIcons.utensils,
+        icon: FontAwesomeIcons.utensils.data,
         colorText: AppColors.softRed,
         colorBackground: AppColors.lightOrangeBg,
         text: AppStrings.dineInTakeaway,

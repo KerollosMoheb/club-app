@@ -53,7 +53,7 @@ class CreditDebitCard extends StatelessWidget {
   Widget _buildHeader() {
     return Row(
       children: [
-        Icon(FontAwesomeIcons.creditCard, size: 20),
+        FaIcon(FontAwesomeIcons.creditCard, size: 20),
         SizedBox(width: 12.w),
         Text(
           AppStrings.creditOrDebitCard,
