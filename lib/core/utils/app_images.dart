@@ -3,8 +3,7 @@ class Assets {
   Assets._();
 
   /// Package prefix so the images load when this code is used as a package.
-  static const String _p = "packages/lib/club_app/";
-
+static const String _p = "packages/club_app/";
   static const String imagesAbuAuf = "${_p}assets/images/abuAuf.png";
   static const String imagesAlbaraka = "${_p}assets/images/albaraka.png";
   static const String imagesBackGroundItihad =
